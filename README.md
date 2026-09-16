@@ -7,9 +7,9 @@ Portal de prezentare prin care clienta (Eternal Beauty by Cosmina) alege unul di
 ```
 index.html                     ← portalul Brixwave (alegere design + preț + confirmare)
 assets/brixwave.{css,js}       ← stil + logică portal (config în capul lui brixwave.js)
-designs/01-noir-luxe/          ← Design 1: întunecat, auriu, cinematic
+designs/01-lumiere/            ← Design 1: luminos, glass & pearl, poveste sticky, pan orizontal
 designs/02-blush-editorial/    ← Design 2: editorial, roz prăfuit & prună
-designs/03-atelier-minimal/    ← Design 3: minimal, salvie & ivoriu
+designs/03-obsidian/           ← Design 3: întunecat, chrome & orhidee, preloader, sticky stack
 shared/eternal-data.js         ← TOATE datele salonului (o singură sursă pentru cele 3 site-uri)
 shared/photos/                 ← fotografiile (vezi README-ul de acolo)
 scripts/import-instagram.sh    ← import automat al postărilor publice (Instaloader)

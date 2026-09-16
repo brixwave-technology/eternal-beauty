@@ -14,7 +14,7 @@ Suprascrie fișierele cu exact aceste nume:
 | `hero.jpg`     | poză de copertă, verticală                       | hero-ul celor 3 design-uri          |
 | `portrait.jpg` | portret Cosmina                                  | secțiunea „Despre”                  |
 | `post-01.jpg`  | … `post-12.jpg` — lucrări (gene, sprâncene)      | galerie / marquee / grid            |
-| `post-02.jpg` + `post-04.jpg` | perechea „după” / „înainte”       | sliderul din Atelier Minimal        |
+| `post-02.jpg` + `post-04.jpg` | perechea „după” / „înainte”       | sliderul înainte/după din Lumière        |
 
 Format recomandat: JPG, min. 1200px pe latura lungă, orientare verticală (4:5 ca pe Instagram).
 Legendele și tag-urile se editează în `shared/eternal-data.js` → `photos`.

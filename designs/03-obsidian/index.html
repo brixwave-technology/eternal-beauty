@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eternal Beauty by Cosmina — Obsidian</title>
+<meta name="description" content="Eternal Beauty by Cosmina: extensii de gene, laminare gene și sprâncene, styling de sprâncene. Programează-te.">
+<meta name="theme-color" content="#07070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><div class="loader__word">Eternal <em>Beauty</em></div><div class="loader__count" id="loader-count">0</div><div class="loader__line"><i id="loader-bar"></i></div></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="spot" id="spot" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="top__brand" href="#" aria-label="Eternal Beauty, acasă"><i></i>Eternal Beauty</a>
+  <nav class="top__nav" aria-label="Meniu principal">
+    <a href="#servicii">Servicii</a><a href="#lucrari">Lucrări</a><a href="#cosmina">Cosmina</a><a href="#pareri">Păreri</a><a href="#info">Info</a>
+  </nav>
+  <a class="btn btn--chrome" data-wa href="#" target="_blank" rel="noopener" data-magnetic><span>Programează-te</span></a>
+  <button class="top__burger" aria-label="Deschide meniul" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+<div class="menu" id="menu" hidden><nav aria-label="Meniu mobil"><a href="#servicii">Servicii</a><a href="#lucrari">Lucrări</a><a href="#cosmina">Cosmina</a><a href="#pareri">Păreri</a><a href="#info">Info</a><a href="#contact">Contact</a></nav></div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <h1 class="hero__word" aria-label="Eternal"><span>E</span><span>t</span><span>e</span><span>r</span><span>n</span><span>a</span><span>l</span></h1>
+    <div class="hero__row">
+      <p class="hero__sub">Gene și sprâncene lucrate cu precizie, într-un studio privat. O clientă, o ședință, o privire care rămâne.</p>
+      <div class="hero__cta">
+        <a class="btn btn--orchid btn--lg" data-wa href="#" target="_blank" rel="noopener" data-magnetic><span>Rezervă o ședință</span></a>
+        <a class="btn btn--ghost btn--lg" href="#servicii" data-magnetic><span>Servicii</span></a>
+      </div>
+    </div>
+    <figure class="hero__media" id="hero-media">
+      <img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Privire cu extensii de gene, fotografie de copertă" width="800" height="1000" fetchpriority="high">
+    </figure>
+    <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+  </section>
+
+  <!-- MARQUEE FOTO -->
+  <div class="strip" aria-hidden="true"><div class="strip__track" id="strip"></div></div>
+
+  <!-- SERVICII: sticky stack -->
+  <section class="stack" id="servicii">
+    <div class="stack__intro">
+      <h2 class="h2">Servicii</h2>
+      <p class="sub">Fiecare card e o tehnică. Derulează și lasă-le să se așeze una peste alta.</p>
+    </div>
+    <div class="stack__list" id="services"></div>
+  </section>
+
+  <!-- CIFRE -->
+  <section class="numbers" aria-label="Eternal Beauty în cifre"><ul id="stats"></ul></section>
+
+  <!-- LUCRĂRI -->
+  <section class="works" id="lucrari">
+    <div class="works__head"><h2 class="h2">Lucrări <em>recente</em></h2><a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener"><span>Instagram ↗</span></a></div>
+    <div class="works__grid" id="gallery"></div>
+  </section>
+
+  <!-- COSMINA -->
+  <section class="about" id="cosmina">
+    <figure class="about__photo" data-parallax="0.08"><img data-photo="Portret" src="../../shared/photos/portrait.jpg" alt="Portret Cosmina, fondatoare Eternal Beauty" width="800" height="1000" loading="lazy"></figure>
+    <div class="about__text">
+      <h2 class="h2">Cosmina</h2>
+      <p class="about__role" data-founder="role"></p>
+      <div id="story"></div>
+      <ul class="about__values" id="values"></ul>
+      <ul class="creds" id="creds"></ul>
+    </div>
+  </section>
+
+  <!-- PROCES -->
+  <section class="flow">
+    <h2 class="h2">Cum decurge <em>o ședință</em></h2>
+    <ol class="flow__row" id="process"><i class="flow__line" aria-hidden="true"><b id="flow-progress"></b></i></ol>
+  </section>
+
+  <!-- PĂRERI -->
+  <section class="quote" id="pareri">
+    <blockquote class="quote__big" id="quote-big"></blockquote>
+    <div class="quote__grid" id="quotes"></div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info" id="info">
+    <div class="info__col"><h2 class="h2" id="care-title"></h2><p class="sub" id="care-intro"></p><div class="acc" id="care"></div></div>
+    <div class="info__col"><h2 class="h2" id="policies-title"></h2><p class="sub">Câteva reguli simple, ca totul să decurgă relaxat pentru amândouă.</p><div class="acc" id="policies"></div></div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2 class="h2">Întrebări <em>frecvente</em></h2>
+    <div class="acc acc--wide" id="faq"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <a class="contact__big" data-wa href="#" target="_blank" rel="noopener"><span class="contact__fill" aria-hidden="true"></span><span class="contact__label">Programează-te</span></a>
+    <div class="contact__meta">
+      <div><b>WhatsApp</b><a data-wa href="#" target="_blank" rel="noopener" data-brand="phone"></a></div>
+      <div><b>Instagram</b><a data-ig href="#" target="_blank" rel="noopener">@<span data-brand="instagramHandle"></span></a></div>
+      <div><b>E‑mail</b><a data-mail href="#" data-brand="email"></a></div>
+      <div><b>Program</b><span id="schedule"></span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> Eternal Beauty by Cosmina</span>
+  <span data-brand="address"></span>
+  <span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span>
+</footer>
+
+<script src="../../shared/eternal-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
