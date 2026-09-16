@@ -36,11 +36,13 @@ Alternativ, „Deploy from a branch” cu ramura curentă și folderul `/ (root)
 
 ## Ce trebuie completat înainte de a trimite portalul clientei
 
-1. **Datele salonului** în `shared/eternal-data.js`: telefon, WhatsApp, adresă, program,
-   servicii și prețuri, testimoniale reale. Câmpurile provizorii sunt marcate `[PLACEHOLDER]`.
-2. **Fotografiile** în `shared/photos/` (nume exacte în `shared/photos/README.md`).
-   Instagram nu a fost accesibil din mediul de generare, deci pornim cu placeholdere
-   generate în paleta fiecărui design.
+1. **Telefonul și WhatsApp-ul salonului** în `shared/eternal-data.js` (`brand.phone`,
+   `brand.whatsapp`). Restul conținutului (8 servicii cu prețuri orientative, proces,
+   îngrijire, politici, 6 testimoniale, 8 întrebări) este complet și se ajustează după
+   lista reală a Cosminei.
+2. **Fotografiile** în `shared/photos/`: setul actual este generat (ilustrații editoriale,
+   `scripts/generate-photos.py`). Suprascrie-le cu pozele reale, păstrând numele
+   (detalii în `shared/photos/README.md`).
 3. **Contact Brixwave** în `assets/brixwave.js` → `BRIXWAVE.email` / `BRIXWAVE.whatsapp`.
    Confirmarea alegerii ajunge acolo, cu designul ales în mesaj.
 

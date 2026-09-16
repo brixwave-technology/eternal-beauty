@@ -17,7 +17,7 @@
 <header class="top">
   <a class="top__brand" href="#" aria-label="Eternal Beauty, acasă">Eternal Beauty <small>by Cosmina</small></a>
   <nav class="top__nav" aria-label="Meniu principal">
-    <a href="#servicii">Servicii</a><a href="#galerie">Galerie</a><a href="#despre">Despre</a><a href="#pareri">Păreri</a><a href="#contact">Contact</a>
+    <a href="#servicii">Servicii</a><a href="#galerie">Galerie</a><a href="#despre">Despre</a><a href="#ingrijire">Îngrijire</a><a href="#pareri">Păreri</a><a href="#contact">Contact</a>
   </nav>
   <a class="pill pill--dark" data-wa href="#" target="_blank" rel="noopener">Programare</a>
 </header>
@@ -50,6 +50,9 @@
   <!-- TICKER -->
   <div class="ticker" aria-hidden="true"><div class="ticker__track" id="ticker"></div></div>
 
+  <!-- CIFRE -->
+  <section class="numbers" aria-label="Eternal Beauty în cifre"><ul id="stats"></ul></section>
+
   <!-- SERVICII: large numbered-free list with sticky heading -->
   <section class="menu" id="servicii">
     <div class="menu__side">
@@ -75,6 +78,7 @@
       <p class="about__role" data-founder="role"></p>
       <div id="story"></div>
       <ul class="about__creds" id="creds"></ul>
+      <ul class="about__values" id="values"></ul>
     </div>
     <figure class="about__photo">
       <img data-photo="Portret" src="../../shared/photos/portrait.jpg" alt="Portret Cosmina, fondatoare Eternal Beauty" width="800" height="1000" loading="lazy">
@@ -87,6 +91,15 @@
     <ol class="steps__row" id="process"></ol>
   </section>
 
+  <!-- ÎNGRIJIRE -->
+  <section class="care" id="ingrijire">
+    <div class="care__side">
+      <h2 class="display" id="care-title"></h2>
+      <p class="muted" id="care-intro"></p>
+    </div>
+    <ol class="care__list" id="care"></ol>
+  </section>
+
   <!-- PĂRERI: cards fanned -->
   <section class="voices" id="pareri">
     <h2 class="display">Ce spun <em>clientele</em></h2>
@@ -97,6 +110,12 @@
   <section class="faq">
     <h2 class="display">Întrebări</h2>
     <div class="faq__list" id="faq"></div>
+  </section>
+
+  <!-- BINE DE ȘTIUT -->
+  <section class="notes">
+    <h2 class="display" id="policies-title"></h2>
+    <ul class="notes__grid" id="policies"></ul>
   </section>
 
   <!-- CONTACT -->

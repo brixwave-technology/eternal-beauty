@@ -29,7 +29,7 @@
         <span class="service__meta">${esc(s.duration)}</span>
         <span class="service__price">${esc(U.priceLabel(s.price))}</span>
       </div>
-      <div class="service__body" id="svc-${s.id}"><div><p>${esc(s.description)}</p></div></div>
+      <div class="service__body" id="svc-${s.id}"><div><p>${esc(s.description)}</p>${s.maintenance ? `<span class="maint">${esc(s.maintenance)}</span>` : ""}</div></div>
     </li>`).join("");
   const preview = $("#services-preview"), pimg = $("img", preview);
   $$(".service", list).forEach((li, i) => {
@@ -55,7 +55,7 @@
 
   /* ---- gallery ---- */
   const gal = $("#gallery");
-  gal.innerHTML = D.photos.slice(0, 8).map((p) => `
+  gal.innerHTML = D.photos.slice(0, 12).map((p) => `
     <figure class="shot reveal">
       <img data-photo="${esc(p.tag)}" src="${U.photoPath(p.src)}" alt="${esc(p.alt)}" width="800" height="1000" loading="lazy" draggable="false">
       <figcaption>${esc(p.tag)}</figcaption>
@@ -69,6 +69,12 @@
   /* ---- about / process ---- */
   $("#story").innerHTML = D.founder.story.map((p) => `<p class="reveal">${esc(p)}</p>`).join("");
   $("#creds").innerHTML = D.founder.credentials.map((c) => `<li class="reveal">${esc(c)}</li>`).join("");
+  $("#stats").innerHTML = D.stats.map((s) => `<li class="reveal"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></li>`).join("");
+  $("#values").innerHTML = D.founder.values.map((v) => `<li class="reveal"><h3>${esc(v.title)}</h3><p>${esc(v.text)}</p></li>`).join("");
+  $("#care-title").textContent = D.aftercare.title; $("#care-intro").textContent = D.aftercare.intro;
+  $("#care").innerHTML = D.aftercare.tips.map((t) => `<li class="reveal"><h3>${esc(t.title)}</h3><p>${esc(t.text)}</p></li>`).join("");
+  $("#policies-title").textContent = D.policies.title;
+  $("#policies").innerHTML = D.policies.items.map((p) => `<div class="reveal"><dt>${esc(p.title)}</dt><dd>${esc(p.text)}</dd></div>`).join("");
   $("#process").innerHTML = D.process.map((p, i) => `<li class="step reveal" style="--i:${i}"><h3>${esc(p.step)}</h3><p>${esc(p.text)}</p></li>`).join("");
 
   /* ---- quotes rotator ---- */
@@ -122,7 +128,7 @@
   // hero text: reveal on load
   requestAnimationFrame(() => setTimeout(() => $(".hero").classList.add("is-in"), 80));
   // stagger reveals inside the same parent
-  $$(".services__list, .about__creds, .process__steps, .gallery__scroller, .faq__list").forEach((group) =>
+  $$(".services__list, .about__creds, .about__stats, .values__list, .care__grid, .policies__list, .process__steps, .gallery__scroller, .faq__list").forEach((group) =>
     $$(".reveal", group).forEach((el, i) => (el.style.transitionDelay = Math.min(i * 70, 420) + "ms")));
 
   /* ---- parallax (hero frame) ---- */

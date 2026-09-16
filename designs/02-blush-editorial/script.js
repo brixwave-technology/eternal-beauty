@@ -25,7 +25,7 @@
         <span class="item__price">${esc(U.priceLabel(s.price))}</span>
         <span class="item__sub">${esc(s.subtitle)}</span>
       </button>
-      <div class="item__more" id="s-${s.id}"><div><div class="in"><p>${esc(s.description)}</p><span class="dur">${esc(s.duration)}</span></div></div></div>
+      <div class="item__more" id="s-${s.id}"><div><div class="in"><div><p>${esc(s.description)}</p>${s.maintenance ? `<span class="maint">${esc(s.maintenance)}</span>` : ""}</div><span class="dur">${esc(s.duration)}</span></div></div></div>
     </li>`).join("");
   $$(".item__head").forEach((b) => b.addEventListener("click", () => {
     const li = b.parentElement, open = !li.classList.contains("is-open");
@@ -36,6 +36,12 @@
   $("#gallery").innerHTML = D.photos.slice(0, 8).map((p) => `
     <figure class="tile reveal"><img data-photo="${esc(p.tag)}" src="${U.photoPath(p.src)}" alt="${esc(p.alt)}" width="800" height="1000" loading="lazy"><figcaption>${esc(p.tag)}</figcaption></figure>`).join("");
 
+  $("#stats").innerHTML = D.stats.map((s) => `<li class="reveal"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></li>`).join("");
+  $("#values").innerHTML = D.founder.values.map((v) => `<li class="reveal"><h3>${esc(v.title)}</h3><p>${esc(v.text)}</p></li>`).join("");
+  $("#care-title").textContent = D.aftercare.title; $("#care-intro").textContent = D.aftercare.intro;
+  $("#care").innerHTML = D.aftercare.tips.map((t) => `<li class="reveal"><div><h3>${esc(t.title)}</h3><p>${esc(t.text)}</p></div></li>`).join("");
+  $("#policies-title").textContent = D.policies.title;
+  $("#policies").innerHTML = D.policies.items.map((p) => `<li class="reveal"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p></li>`).join("");
   $("#story").innerHTML = D.founder.story.map((p) => `<p class="reveal">${esc(p)}</p>`).join("");
   $("#creds").innerHTML = D.founder.credentials.map((c) => `<li class="reveal">${esc(c)}</li>`).join("");
   $("#process").innerHTML = D.process.map((p) => `<li class="card reveal"><i aria-hidden="true"></i><div><h3>${esc(p.step)}</h3><p>${esc(p.text)}</p></div></li>`).join("");
@@ -56,7 +62,7 @@
 
   /* reveals with stagger per group */
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }), { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
-  $$(".menu__list, .grid__wall, .steps__row, .voices__deck, .faq__list, .about__creds, #story").forEach((g) => $$(".reveal", g).forEach((el, i) => (el.style.transitionDelay = Math.min(i * 80, 480) + "ms")));
+  $$(".menu__list, .grid__wall, .steps__row, .voices__deck, .faq__list, .about__creds, .about__values, .numbers ul, .care__list, .notes__grid, #story").forEach((g) => $$(".reveal", g).forEach((el, i) => (el.style.transitionDelay = Math.min(i * 80, 480) + "ms")));
   $$(".reveal").forEach((el) => io.observe(el));
 
   /* tilt on voice cards */

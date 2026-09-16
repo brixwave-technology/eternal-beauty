@@ -7,7 +7,7 @@ const BRIXWAVE = {
   price: 1250,
   currency: "RON",
   includes: [
-    "Designul ales, personalizat cu fotografiile și textele reale de pe Instagram",
+    "Designul ales, personalizat cu fotografiile reale de pe Instagram, serviciile și prețurile tale",
     "Toate secțiunile: servicii, galerie, despre, proces, păreri, întrebări frecvente, contact",
     "Programare rapidă prin WhatsApp și Instagram, cu mesaj precompletat",
     "Adaptare completă pentru telefon, tabletă și desktop",
