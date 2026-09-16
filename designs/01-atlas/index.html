@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eternal Beauty by Cosmina — Atlas</title>
+<meta name="description" content="Eternal Beauty: epilare definitivă cu laser medical și remodelare corporală în Sighetu Marmației și Vișeu de Sus. Consultație gratuită.">
+<meta name="theme-color" content="#0f2a2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="top__brand" href="#" aria-label="Eternal Beauty, acasă"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3 4 6 6 6 11a6 6 0 0 1-12 0c0-5 3-7 6-11z" fill="currentColor"/></svg><span>Eternal <b>Beauty</b></span></a>
+  <nav class="top__nav" aria-label="Meniu principal">
+    <a href="#servicii">Servicii</a><a href="#zone">Zone</a><a href="#rezultate">Rezultate</a><a href="#locatii">Locații</a><a href="#intrebari">Întrebări</a>
+  </nav>
+  <div class="top__actions">
+    <a class="icon-btn" data-tel href="#" aria-label="Sună"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+    <a class="btn btn--primary top__cta" data-wa href="#" target="_blank" rel="noopener">Consultație gratuită</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="hero__kicker" data-brand="category"></p>
+      <h1 class="hero__title">Piele netedă.<br><em>Definitiv.</em></h1>
+      <p class="hero__sub">Epilare cu laser medical și remodelare corporală, în Sighetu Marmației și Vișeu de Sus. Rezultate garantate de peste 8 ani.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" data-wa href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Consultație gratuită</a>
+        <a class="btn btn--soft btn--lg" href="#zone">Alege zonele</a>
+      </div>
+    </div>
+    <figure class="hero__media">
+      <img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Epilare definitivă laser, fotografie de copertă" width="800" height="1000" fetchpriority="high">
+      <ul class="hero__pills" id="hero-pills"></ul>
+    </figure>
+  </section>
+
+  <!-- SERVICII: segmented + chips -->
+  <section class="services" id="servicii">
+    <div class="sec">
+      <h2 class="h2">Tratamente</h2>
+      <div class="seg" role="tablist" aria-label="Categorie" id="seg"><i class="seg__thumb" aria-hidden="true"></i></div>
+      <p class="seg__text" id="seg-text"></p>
+    </div>
+    <div class="chips" id="chips" tabindex="0" aria-label="Tratamente, derulează orizontal"></div>
+  </section>
+
+  <!-- BODY MAP -->
+  <section class="zones" id="zone">
+    <div class="sec">
+      <h2 class="h2">Alege zonele pentru <em>epilare laser</em></h2>
+      <p class="sub">Atinge zonele pe siluetă sau în listă. Vezi imediat durata ședinței și prețul estimat, apoi cere oferta cu un mesaj.</p>
+    </div>
+    <div class="zones__grid">
+      <figure class="body" aria-hidden="true">
+        <svg viewBox="0 0 300 660" id="body-svg">
+          <defs><linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dccd"/><stop offset="1" stop-color="#e5c3ae"/></linearGradient></defs>
+          <g class="body__shape" fill="url(#skin)">
+            <circle cx="150" cy="52" r="34"/>
+            <rect x="136" y="82" width="28" height="26" rx="10"/>
+            <path d="M92 118c20-14 96-14 116 0 12 8 16 26 14 40l-8 130c-2 20-6 40-4 60 2 26 6 52 4 78H86c-2-26 2-52 4-78 2-20-2-40-4-60l-8-130c-2-14 2-32 14-40z"/>
+            <path d="M92 122c-22 8-34 30-38 56l-16 120c-2 16 22 20 26 4l22-100z"/>
+            <path d="M208 122c22 8 34 30 38 56l16 120c2 16-22 20-26 4l-22-100z"/>
+            <path d="M88 420c-6 60-4 120 6 180 2 14 30 14 32 0 6-58 8-116 20-174z"/>
+            <path d="M212 420c6 60 4 120-6 180-2 14-30 14-32 0-6-58-8-116-20-174z"/>
+            <path d="M92 598h36c4 16 8 30 8 40H88c-2-14-2-26 4-40zM172 598h36c6 14 6 26 4 40h-48c0-10 4-24 8-40z"/>
+          </g>
+          <g class="body__zones" id="body-zones">
+            <ellipse data-zone="fata" cx="150" cy="66" rx="18" ry="10"/>
+            <ellipse data-zone="axile" cx="104" cy="140" rx="12" ry="14"/><ellipse data-zone="axile" cx="196" cy="140" rx="12" ry="14"/>
+            <path data-zone="brate" d="M78 150c-14 20-22 60-30 130l24 6 24-110c4-16-6-26-18-26zM222 150c14 20 22 60 30 130l-24 6-24-110c-4-16 6-26 18-26z"/>
+            <rect data-zone="piept" x="106" y="150" width="88" height="130" rx="30"/>
+            <path data-zone="inghinal" d="M112 300c20 16 56 16 76 0 6 22 4 46-6 62-16 14-48 14-64 0-10-16-12-40-6-62z"/>
+            <path data-zone="coapse" d="M90 424c20-14 42-14 60 0 4 40 2 76-8 100-10 8-30 8-40 0-10-24-14-60-12-100zM150 424c18-14 40-14 60 0 2 40-2 76-12 100-10 8-30 8-40 0-10-24-12-60-8-100z"/>
+            <path data-zone="gambe" d="M96 536c14-8 30-8 40 0 2 24 0 46-6 62H98c-4-16-4-38-2-62zM164 536c10-8 26-8 40 0 2 24 2 46-2 62h-32c-6-16-8-38-6-62z"/>
+            <rect data-zone="spate" x="110" y="150" width="80" height="130" rx="30" class="is-hidden-zone"/>
+          </g>
+        </svg>
+        <figcaption>Vedere din față · spatele se alege din listă</figcaption>
+      </figure>
+      <div class="zones__panel">
+        <ul class="zlist" id="zlist"></ul>
+        <div class="zsum" id="zsum">
+          <div class="zsum__row">
+            <div><b id="z-count">0</b><span>zone alese</span></div>
+            <div><b id="z-min">0 min</b><span>durata ședinței</span></div>
+            <div><b id="z-price">0 lei</b><span>preț estimat / ședință</span></div>
+          </div>
+          <p class="zsum__note">Cura completă: 6–8 ședințe. Pachetele au preț redus, stabilit la consultația gratuită.</p>
+          <div class="zsum__cta">
+            <a class="btn btn--primary btn--lg" id="z-wa" href="#" target="_blank" rel="noopener">Cere ofertă pe WhatsApp</a>
+            <button class="btn btn--soft" id="z-reset" type="button">Resetează</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REZULTATE -->
+  <section class="results" id="rezultate">
+    <div class="sec">
+      <h2 class="h2">Rezultate</h2>
+      <p class="sub">Înainte și după cura completă de epilare laser pe gambe. Trage de mâner.</p>
+    </div>
+    <div class="cmp card" id="compare">
+      <img class="cmp__after" data-photo="După" src="../../shared/photos/post-02.jpg" alt="Picioare netede după epilare laser" width="1200" height="800" loading="lazy">
+      <div class="cmp__before" id="cmp-before"><img data-photo="Înainte" src="../../shared/photos/post-04.jpg" alt="Picioare înainte de epilare laser" width="1200" height="800" loading="lazy"></div>
+      <input class="cmp__range" id="cmp-range" type="range" min="0" max="100" value="50" aria-label="Poziția comparației">
+      <div class="cmp__handle" aria-hidden="true"><span></span></div>
+      <span class="cmp__tag cmp__tag--l" aria-hidden="true">Înainte</span><span class="cmp__tag cmp__tag--r" aria-hidden="true">După</span>
+    </div>
+    <div class="gallery" id="gallery" tabindex="0" aria-label="Galerie, derulează orizontal"></div>
+  </section>
+
+  <!-- DE CE -->
+  <section class="why">
+    <div class="sec"><h2 class="h2">De ce Eternal Beauty</h2></div>
+    <ul class="stats" id="stats"></ul>
+    <ul class="values" id="values"></ul>
+  </section>
+
+  <!-- PROCES -->
+  <section class="flow">
+    <div class="sec"><h2 class="h2">Cum decurge</h2></div>
+    <ol class="flow__list" id="process"></ol>
+  </section>
+
+  <!-- LOCAȚII -->
+  <section class="places" id="locatii">
+    <div class="sec"><h2 class="h2">Două locații în Maramureș</h2></div>
+    <div class="places__grid" id="locations"></div>
+    <div class="card sched-card"><h3>Program</h3><div id="schedule"></div><p class="muted" data-brand="bookingNote"></p></div>
+  </section>
+
+  <!-- COSMINA -->
+  <section class="about">
+    <figure class="about__photo card"><img data-photo="Portret" src="../../shared/photos/portrait.jpg" alt="Portret Cosmina, fondatoare Eternal Beauty" width="800" height="1000" loading="lazy"></figure>
+    <div class="about__text">
+      <h2 class="h2">Cosmina</h2>
+      <p class="about__role" data-founder="role"></p>
+      <div id="story"></div>
+      <ul class="creds" id="creds"></ul>
+    </div>
+  </section>
+
+  <!-- PĂRERI -->
+  <section class="voices">
+    <div class="sec"><h2 class="h2">Ce spun clientele</h2></div>
+    <div class="voices__row" id="quotes" tabindex="0" aria-label="Testimoniale, derulează orizontal"></div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info" id="intrebari">
+    <div class="sec"><h2 class="h2">Întrebări și informații</h2></div>
+    <div class="seg seg--info" role="tablist" aria-label="Informații" id="seg-info"><i class="seg__thumb" aria-hidden="true"></i></div>
+    <div class="acc is-on" id="faq" role="tabpanel"></div>
+    <div class="acc" id="care" role="tabpanel"></div>
+    <div class="acc" id="policies" role="tabpanel"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__card">
+      <h2 class="contact__title">Consultație gratuită. <em>Fără obligații.</em></h2>
+      <p>Scrie-ne pe WhatsApp sau Instagram, spune-ne zona și obiectivul, iar noi îți propunem planul și oferta.</p>
+      <div class="contact__cta">
+        <a class="btn btn--light btn--lg" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--outline btn--lg" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <dl class="contact__facts">
+        <div><dt>Telefon</dt><dd><a data-tel href="#" data-brand="phone"></a></dd></div>
+        <div><dt>E‑mail</dt><dd><a data-mail href="#" data-brand="email"></a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><span>© <span id="year"></span> Eternal Beauty by Cosmina</span><span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span></footer>
+
+<!-- bară fixă mobil -->
+<nav class="dock" aria-label="Acțiuni rapide">
+  <a data-wa href="#" target="_blank" rel="noopener" class="dock__main"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>WhatsApp</a>
+  <a data-tel href="#" class="dock__btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Sună</a>
+  <a href="#zone" class="dock__btn"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10h8l-1 6h-6zM10 16l-1 5M14 16l1 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Zone</a>
+</nav>
+
+<!-- bottom sheet serviciu -->
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="sheet__panel" id="sheet-panel">
+    <i class="sheet__grip" aria-hidden="true"></i>
+    <button class="icon-btn sheet__close" id="sheet-close" aria-label="Închide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <figure class="sheet__img"><img id="sheet-img" alt="" width="800" height="600"></figure>
+    <p class="sheet__group" id="sheet-group"></p>
+    <h2 class="sheet__title" id="sheet-title"></h2>
+    <p class="sheet__sub" id="sheet-sub"></p>
+    <p class="sheet__desc" id="sheet-desc"></p>
+    <dl class="sheet__meta" id="sheet-meta"></dl>
+    <a class="btn btn--primary btn--lg sheet__cta" id="sheet-wa" href="#" target="_blank" rel="noopener">Cere ofertă pentru acest tratament</a>
+  </div>
+</div>
+
+<script src="../../shared/eternal-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

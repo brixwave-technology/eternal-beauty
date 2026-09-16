@@ -106,7 +106,7 @@ section{padding:clamp(56px,8vw,110px) var(--pad)}
 .offer__price{padding:clamp(28px,4vw,56px);background:linear-gradient(160deg,#1a2a55,#0e1426 70%);display:flex;flex-direction:column;justify-content:center;gap:12px;position:relative}
 .offer__price::after{content:"";position:absolute;right:-30%;bottom:-40%;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(91,140,255,.4),transparent 70%);pointer-events:none}
 .offer__label{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--brand-2)}
-.offer__amount{font:800 clamp(52px,6vw,88px)/1 var(--display);letter-spacing:-.05em;white-space:nowrap}
+.offer__amount{font:800 clamp(44px,6vw,80px)/.95 var(--display);letter-spacing:-.05em}
 .offer__amount small{font:600 clamp(20px,2vw,28px)/1 var(--display);color:var(--fg-70);margin-left:6px;letter-spacing:0}
 .offer__hint{font-size:14px;color:var(--fg-70);padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);align-self:flex-start;position:relative;z-index:1}
 .offer__hint.is-chosen{color:var(--ok);border-color:rgba(110,231,183,.35);background:rgba(110,231,183,.08)}
@@ -166,3 +166,17 @@ section{padding:clamp(56px,8vw,110px) var(--pad)}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .9s var(--ease-out)}
 .reveal.is-in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal,.card.reveal{opacity:1;transform:none;transition:none}.lm>span{transform:none;transition:none}.viewer,.modal,.modal__card{animation:none}}
+
+/* mobile-first touch refinements */
+@media (max-width:760px){
+  .hdr{padding:10px 16px}
+  .hero{padding-top:40px}
+  .hero__title{font-size:clamp(36px,11vw,48px)}
+  .btn{min-height:48px}
+  .card__actions{grid-template-columns:1fr}
+  .card__actions .btn{min-height:50px}
+  .cards{gap:14px}
+  .tbl th,.tbl td{padding:12px 14px;font-size:13px}
+  .modal{align-items:end;padding:0}
+  .modal__card{border-radius:24px 24px 0 0;max-height:92vh;padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+}

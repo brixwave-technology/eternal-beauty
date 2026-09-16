@@ -25,11 +25,11 @@
 <main>
   <!-- HERO: editorial cover -->
   <section class="cover">
-    <div class="cover__issue" aria-hidden="true"><span>Eternal Beauty</span><span id="cover-date"></span><span>Gene · Sprâncene</span></div>
+    <div class="cover__issue" aria-hidden="true"><span>Eternal Beauty</span><span id="cover-date"></span><span>Laser · Remodelare</span></div>
     <h1 class="cover__title">
-      <span class="w" style="--d:0">Frumusețea</span>
-      <span class="w w--italic" style="--d:1">care</span>
-      <span class="w" style="--d:2">rămâne.</span>
+      <span class="w" style="--d:0">Netedă.</span>
+      <span class="w w--italic" style="--d:1">Fermă.</span>
+      <span class="w" style="--d:2">Definitiv.</span>
     </h1>
     <figure class="cover__photo">
       <img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Privire cu extensii de gene, fotografie de copertă" width="800" height="1000" fetchpriority="high">
@@ -41,7 +41,7 @@
     <aside class="cover__aside">
       <p class="cover__lead" data-brand="shortIntro"></p>
       <div class="cover__cta">
-        <a class="pill pill--dark pill--lg" data-wa href="#" target="_blank" rel="noopener">Rezervă pe WhatsApp</a>
+        <a class="pill pill--dark pill--lg" data-wa href="#" target="_blank" rel="noopener">Consultație gratuită</a>
         <a class="pill" href="#servicii">Serviciile</a>
       </div>
     </aside>
@@ -57,7 +57,7 @@
   <section class="menu" id="servicii">
     <div class="menu__side">
       <h2 class="display">Servicii</h2>
-      <p class="muted">Apasă pe un serviciu pentru detalii. Prețul final se stabilește la consultație, după analiza genelor naturale.</p>
+      <p class="muted">Apasă pe un tratament pentru detalii. Planul și oferta se stabilesc la consultația gratuită, după evaluare.</p>
     </div>
     <ul class="menu__list" id="services"></ul>
   </section>
@@ -65,7 +65,7 @@
   <!-- GALERIE: editorial grid -->
   <section class="grid" id="galerie">
     <div class="grid__head">
-      <h2 class="display">Din <em>studio</em></h2>
+      <h2 class="display">Din <em>clinică</em></h2>
       <a class="pill" data-ig href="#" target="_blank" rel="noopener">Vezi tot pe Instagram ↗</a>
     </div>
     <div class="grid__wall" id="gallery"></div>
@@ -87,7 +87,7 @@
 
   <!-- PROCES: horizontal stepper cards -->
   <section class="steps">
-    <h2 class="display steps__title">Ședința, <em>pas cu pas</em></h2>
+    <h2 class="display steps__title">Tratamentul, <em>pas cu pas</em></h2>
     <ol class="steps__row" id="process"></ol>
   </section>
 
@@ -121,7 +121,7 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="contact__card">
-      <h2 class="contact__title">Te aștept <em>în studio.</em></h2>
+      <h2 class="contact__title">Consultație <em>gratuită.</em></h2>
       <p class="muted" data-brand="bookingNote"></p>
       <div class="contact__grid">
         <div>
@@ -135,7 +135,7 @@
         </div>
         <div>
           <h3>Unde</h3>
-          <p><a data-maps href="#" target="_blank" rel="noopener" data-brand="address"></a></p>
+          <div id="locations"></div>
           <p><a data-tel href="#" data-brand="phone"></a></p>
         </div>
       </div>
@@ -146,9 +146,11 @@
 <footer class="foot">
   <span>© <span id="year"></span> Eternal Beauty by Cosmina</span>
   <a data-ig href="#" target="_blank" rel="noopener">@<span data-brand="instagramHandle"></span></a>
+  <span data-brand="address"></span>
   <span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span>
 </footer>
 
+<nav class="dock" aria-label="Acțiuni rapide"><a class="dock__main" data-wa href="#" target="_blank" rel="noopener">WhatsApp · consultație gratuită</a><a data-tel href="#">Sună</a></nav>
 <script src="../../shared/eternal-data.js"></script>
 <script src="script.js"></script>
 </body>

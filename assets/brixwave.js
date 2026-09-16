@@ -4,44 +4,42 @@ const BRIXWAVE = {
   email: "brixwavetechnology@gmail.com",   // unde ajunge confirmarea clientului
   whatsapp: "",                            // ex: "407xxxxxxxx" (doar cifre). Gol → butonul WhatsApp e ascuns
   client: "Eternal Beauty by Cosmina",
-  price: 1250,
-  currency: "RON",
   includes: [
-    "Designul ales, personalizat cu fotografiile reale de pe Instagram, serviciile și prețurile tale",
-    "Toate secțiunile: servicii, galerie, despre, proces, păreri, întrebări frecvente, contact",
-    "Programare rapidă prin WhatsApp și Instagram, cu mesaj precompletat",
-    "Adaptare completă pentru telefon, tabletă și desktop",
+    "Designul ales, personalizat cu fotografiile reale de pe Instagram, tratamentele și prețurile tale",
+    "Toate secțiunile: tratamente, zone, rezultate, locații, despre, păreri, întrebări frecvente, contact",
+    "Cerere de consultație gratuită prin WhatsApp și Instagram, cu mesaj precompletat",
+    "Mobile first: gândit pentru telefon, apoi adaptat la tabletă și desktop",
     "Animații și micro‑interacțiuni moderne, optimizate pentru performanță",
     "Optimizare SEO de bază (titluri, descrieri, viteză, accesibilitate)",
     "Publicare online și asistență la configurarea domeniului",
     "O rundă de modificări după livrare",
   ],
   steps: [
-    ["Alegi designul", "din portal, apoi confirmi prin e‑mail sau WhatsApp."],
-    ["Primești oferta scrisă", "cu prețul de 1.250 RON, termenul de livrare și pașii de plată."],
-    ["Trimiți materialele", "fotografiile, lista de servicii și prețurile, datele de contact."],
-    ["Livrăm site-ul", "personalizat, testat pe toate dispozitivele, gata de publicat."],
+    ["Alegi designul", "din portal și trimiți cererea de ofertă prin e‑mail sau WhatsApp."],
+    ["Primești oferta scrisă", "personalizată: preț, termen de livrare și pașii de plată."],
+    ["Trimiți materialele", "fotografiile reale, lista finală de tratamente și prețuri, datele de contact."],
+    ["Livrăm site-ul", "personalizat, testat pe telefon în primul rând, gata de publicat."],
   ],
 };
 
 const DESIGNS = [
   {
-    id: "lumiere",
-    name: "Lumière",
-    vibe: "Luminos · glass · pearl",
-    path: "designs/01-lumiere/index.html",
-    desc: "Alb perlat cu reflexii de sidef, sticlă mată și tipografie Bodoni. Serviciile se derulează ca o poveste Apple, cu imaginea fixă care se schimbă la fiecare pas; galeria se parcurge orizontal, bento pentru Cosmina, tab-uri pentru informații, lightbox pentru lucrări.",
-    tags: ["Bodoni Moda", "Sidef & blush", "Poveste sticky", "Pan orizontal"],
-    swatches: ["#f8f6f3", "#e7cfc6", "#2a2320"],
-    motion: 4, warmth: 4, density: 3,
-    audience: "Premium consumer, aer de Apple și parfumerie de lux",
+    id: "atlas",
+    name: "Atlas",
+    vibe: "Ca o aplicație · clinic · interactiv",
+    path: "designs/01-atlas/index.html",
+    desc: "Gândit pentru telefon ca o aplicație: bară de acțiuni fixă jos (WhatsApp, Sună, Zone), tratamente pe segmente cu fișă în bottom‑sheet și, piesa centrală, o hartă corporală interactivă: atingi zonele pentru epilare laser și vezi imediat durata, prețul estimat și trimiți cererea de ofertă cu zonele deja completate.",
+    tags: ["Plus Jakarta Sans", "Alb & petrol", "Hartă corporală", "Bottom-sheet"],
+    swatches: ["#fbfbf9", "#2f7f7a", "#0f2a2e"],
+    motion: 3, warmth: 3, density: 4,
+    audience: "Cliente care vor să vadă rapid ce, cât și unde, direct de pe telefon",
   },
   {
     id: "blush-editorial",
     name: "Blush Editorial",
     vibe: "Cald · editorial · revistă",
     path: "designs/02-blush-editorial/index.html",
-    desc: "Compoziție de copertă de revistă: titlu uriaș, fotografii cu arcade, roz prăfuit și prună. Galerie tip colaj, carduri care se înclină la hover, sticker rotativ. Feminin, prietenos, memorabil.",
+    desc: "Compoziție de copertă de revistă: titlu uriaș, fotografii cu arcade, roz prăfuit și prună. Galerie tip colaj, carduri care se înclină la hover, sticker rotativ. Feminin, prietenos, memorabil, cu bară de acțiuni pe telefon.",
     tags: ["Fraunces italic", "Roz & prună", "Grid colaj", "Sticker rotativ"],
     swatches: ["#fbf4f0", "#c9737a", "#3d1f2b"],
     motion: 3, warmth: 5, density: 3,
@@ -52,7 +50,7 @@ const DESIGNS = [
     name: "Obsidian",
     vibe: "Întunecat · chrome · cinematic",
     path: "designs/03-obsidian/index.html",
-    desc: "Negru profund, argint chrome și un singur accent orhidee. Preloader cu numărătoare, „Eternal” uriaș care intră literă cu literă, spotlight după cursor, servicii ca carduri care se așază unul peste altul la scroll, citat care se aprinde cuvânt cu cuvânt.",
+    desc: "Negru profund, argint chrome și un singur accent orhidee. Preloader cu numărătoare, „Eternal” uriaș care intră literă cu literă, spotlight după cursor, tratamentele ca carduri care se așază unul peste altul la scroll, citat care se aprinde cuvânt cu cuvânt.",
     tags: ["Bricolage Grotesque", "Chrome & orhidee", "Sticky stack", "Spotlight"],
     swatches: ["#07070a", "#e6b4d3", "#e6e4ea"],
     motion: 5, warmth: 2, density: 3,
@@ -64,7 +62,6 @@ const DESIGNS = [
 (function () {
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const fmtPrice = () => BRIXWAVE.price.toLocaleString("ro-RO") + " " + BRIXWAVE.currency;
   const KEY = "brixwave.eternal.choice";
   let chosen = null;
   try { chosen = localStorage.getItem(KEY); } catch (e) {}
@@ -90,7 +87,7 @@ const DESIGNS = [
           <button class="btn" data-open="${d.id}">Preview</button>
           <button class="btn btn--primary" data-choose="${d.id}">Aleg acest design</button>
         </div>
-        <div class="card__price"><span>Preț realizare</span><b>${fmtPrice()}</b></div>
+        <div class="card__price"><span>Ofertă personalizată</span><b>la cerere</b></div>
       </div>
     </article>`).join("");
 
@@ -108,7 +105,6 @@ const DESIGNS = [
     ["Căldură vizuală", (d) => meter(d.warmth) + ["", "rece", "sobră", "echilibrată", "caldă", "foarte caldă"][d.warmth]],
     ["Element distinctiv", (d) => esc(d.tags[2]) + " · " + esc(d.tags[3])],
     ["Potrivit pentru", (d) => esc(d.audience)],
-    ["Preț", () => `<b style="color:var(--fg)">${fmtPrice()}</b>`],
   ];
   $("#compare-table").innerHTML = `<thead><tr><th scope="col"></th>${DESIGNS.map((d) => `<th scope="col">${esc(d.name)}</th>`).join("")}</tr></thead>
     <tbody>${rows.map(([label, fn]) => `<tr><th scope="row">${label}</th>${DESIGNS.map((d) => `<td>${fn(d)}</td>`).join("")}</tr>`).join("")}</tbody>`;
@@ -123,7 +119,7 @@ const DESIGNS = [
   const openViewer = (id) => {
     const d = DESIGNS.find((x) => x.id === id); if (!d) return;
     current = d; lastFocus = document.activeElement;
-    $("#viewer-title").innerHTML = `${esc(d.name)}<small>${esc(d.vibe)} · ${fmtPrice()}</small>`;
+    $("#viewer-title").innerHTML = `${esc(d.name)}<small>${esc(d.vibe)}</small>`;
     $("#viewer-open").href = d.path; frame.src = d.path;
     viewer.hidden = false; document.body.style.overflow = "hidden"; $("#viewer-close").focus();
   };
@@ -144,7 +140,7 @@ const DESIGNS = [
     $("#modal-title").textContent = d.name;
     $("#modal-desc").textContent = d.desc;
     $("#modal-includes").innerHTML = BRIXWAVE.includes.slice(0, 5).map((x) => `<li>${esc(x)}</li>`).join("");
-    const msg = `Bună! Sunt de la ${BRIXWAVE.client}. Am ales designul „${d.name}” din portalul Brixwave și aș dori oferta pentru realizarea site-ului la prețul de ${fmtPrice()}. Mulțumesc!`;
+    const msg = `Bună! Sunt de la ${BRIXWAVE.client}. Am ales designul „${d.name}” din portalul Brixwave și aș dori o ofertă pentru realizarea site-ului. Mulțumesc!`;
     $("#modal-mail").href = `mailto:${BRIXWAVE.email}?subject=${encodeURIComponent(`[${BRIXWAVE.client}] Design ales: ${d.name}`)}&body=${encodeURIComponent(msg)}`;
     const wa = $("#modal-wa");
     if (BRIXWAVE.whatsapp) { wa.hidden = false; wa.href = `https://wa.me/${BRIXWAVE.whatsapp}?text=${encodeURIComponent(msg)}`; } else wa.hidden = true;
@@ -159,11 +155,11 @@ const DESIGNS = [
     $$(".card").forEach((c, i) => {
       const on = c.dataset.id === chosen; c.classList.toggle("is-chosen", on);
       $(".card__badge", c).textContent = on ? "Alegerea ta" : "Varianta " + (i + 1);
-      $("[data-choose]", c).textContent = on ? "Ales · vezi oferta" : "Aleg acest design";
+      $("[data-choose]", c).textContent = on ? "Ales · cere oferta" : "Aleg acest design";
     });
     const hint = $("#offer-hint"), d = DESIGNS.find((x) => x.id === chosen);
     hint.classList.toggle("is-chosen", !!d);
-    hint.textContent = d ? `Ai ales „${d.name}”. Confirmă alegerea din card pentru a primi oferta.` : "Alege un design mai sus pentru a confirma.";
+    hint.textContent = d ? `Ai ales „${d.name}”. Trimite cererea din card pentru a primi oferta.` : "Alege un design mai sus, apoi trimite cererea.";
   }
   markChoice();
 

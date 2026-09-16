@@ -13,6 +13,7 @@
   $$("[data-maps]").forEach((a) => (a.href = B.mapsUrl));
   $("#year").textContent = new Date().getFullYear();
   $("#cover-date").textContent = new Date().toLocaleDateString("ro-RO", { month: "long", year: "numeric" });
+  $("#locations").innerHTML = D.locations.map((l) => `<div class="loc"><b>${esc(l.city)}</b><span>${esc(l.address)}</span><br><a href="${esc(l.mapsUrl)}" target="_blank" rel="noopener">Deschide în Maps ↗</a></div>`).join("");
   $("#schedule").innerHTML = B.schedule.map((s) => `<div class="sched"><span>${esc(s.days)}</span><span>${esc(s.hours)}</span></div>`).join("");
 
   const t = D.services.map((s) => `<span>${esc(s.name)}</span>`).join("");
@@ -22,10 +23,10 @@
     <li class="item reveal">
       <button class="item__head" aria-expanded="false" aria-controls="s-${s.id}">
         <span class="item__name">${esc(s.name)}</span>
-        <span class="item__price">${esc(U.priceLabel(s.price))}</span>
+        <span class="item__price">${esc(U.priceLabel(s.price, s.unit, s.from))}</span>
         <span class="item__sub">${esc(s.subtitle)}</span>
       </button>
-      <div class="item__more" id="s-${s.id}"><div><div class="in"><div><p>${esc(s.description)}</p>${s.maintenance ? `<span class="maint">${esc(s.maintenance)}</span>` : ""}</div><span class="dur">${esc(s.duration)}</span></div></div></div>
+      <div class="item__more" id="s-${s.id}"><div><div class="in"><div><p>${esc(s.description)}</p>${s.sessions ? `<span class="maint">${esc(s.sessions)}</span>` : ""}</div><span class="dur">${esc(s.duration)}</span></div></div></div>
     </li>`).join("");
   $$(".item__head").forEach((b) => b.addEventListener("click", () => {
     const li = b.parentElement, open = !li.classList.contains("is-open");

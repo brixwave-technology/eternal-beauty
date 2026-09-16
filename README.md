@@ -1,16 +1,17 @@
 # Portal Brixwave × Eternal Beauty by Cosmina
 
-Portal de prezentare prin care clienta (Eternal Beauty by Cosmina) alege unul dintre
-**trei design-uri complete** de site. Prețul este **1.250 RON pentru oricare** dintre ele
-și îi este comunicat imediat după alegere, împreună cu pașii următori.
+Portal de prezentare prin care clienta (Eternal Beauty by Cosmina, clinică de epilare
+definitivă laser și remodelare corporală medicală, Sighetu Marmației și Vișeu de Sus) alege
+unul dintre **trei design-uri complete** de site, gândite **mobile first**, apoi trimite
+**cererea de ofertă** cu designul ales precompletat în mesaj.
 
 ```
 index.html                     ← portalul Brixwave (alegere design + preț + confirmare)
 assets/brixwave.{css,js}       ← stil + logică portal (config în capul lui brixwave.js)
-designs/01-lumiere/            ← Design 1: luminos, glass & pearl, poveste sticky, pan orizontal
+designs/01-atlas/              ← Design 1: mobile-first „ca o aplicație”, hartă corporală interactivă
 designs/02-blush-editorial/    ← Design 2: editorial, roz prăfuit & prună
 designs/03-obsidian/           ← Design 3: întunecat, chrome & orhidee, preloader, sticky stack
-shared/eternal-data.js         ← TOATE datele salonului (o singură sursă pentru cele 3 site-uri)
+shared/eternal-data.js         ← TOATE datele clinicii (o singură sursă pentru cele 3 site-uri)
 shared/photos/                 ← fotografiile (vezi README-ul de acolo)
 scripts/import-instagram.sh    ← import automat al postărilor publice (Instaloader)
 .claude/skills/                ← skill-uri de design instalate (vezi mai jos)
@@ -36,10 +37,10 @@ Alternativ, „Deploy from a branch” cu ramura curentă și folderul `/ (root)
 
 ## Ce trebuie completat înainte de a trimite portalul clientei
 
-1. **Telefonul și WhatsApp-ul salonului** în `shared/eternal-data.js` (`brand.phone`,
-   `brand.whatsapp`). Restul conținutului (8 servicii cu prețuri orientative, proces,
-   îngrijire, politici, 6 testimoniale, 8 întrebări) este complet și se ajustează după
-   lista reală a Cosminei.
+1. **Telefonul și WhatsApp-ul clinicii** în `shared/eternal-data.js` (`brand.phone`,
+   `brand.whatsapp`). Restul conținutului (7 tratamente reale cu prețuri orientative, zone
+   laser, 2 locații, proces, îngrijire, politici, 6 testimoniale, 8 întrebări) este complet
+   și se ajustează după lista reală a Cosminei.
 2. **Fotografiile** în `shared/photos/`: setul actual este generat (ilustrații editoriale,
    `scripts/generate-photos.py`). Suprascrie-le cu pozele reale, păstrând numele
    (detalii în `shared/photos/README.md`).

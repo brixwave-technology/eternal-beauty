@@ -1,255 +1,286 @@
 /* =====================================================================
    ETERNAL BEAUTY by Cosmina — sursa unică de date pentru cele 3 design-uri
    ---------------------------------------------------------------------
-   Toate cele 3 site-uri citesc din acest fișier: modifici aici, se schimbă
-   peste tot. Conținutul este complet și realist pentru un studio de gene &
-   sprâncene; prețurile sunt orientative (piața din România, 2026) și se
-   ajustează după lista reală a Cosminei. Singurele câmpuri care nu pot fi
-   inventate sunt telefonul și adresa exactă: completează-le mai jos.
+   Date preluate de pe Instagram (@eternal.beauty_by_cosmina):
+   „Eternal Beauty – epilare definitivă laser medicală @remodelare.
+    Epilare definitivă / remodelare corporală MEDICALĂ. De peste 8 ani
+    garantăm rezultate. Sighetu Marmației, str. Bogdan Vodă bl. C6 ·
+    Vișeu de Sus, str. Zorilor.” 207 postări · 1.920 urmăritori.
+
+   Lista de servicii, prețurile și numărul de ședințe sunt orientative
+   (piața din România, 2026) și se ajustează după lista reală a clinicii.
+   Telefonul/WhatsApp trebuie completate mai jos.
    ===================================================================== */
 window.ETERNAL = {
   brand: {
     name: "Eternal Beauty",
     by: "by Cosmina",
-    tagline: "Gene & sprâncene lucrate cu răbdare, pentru o frumusețe care rămâne.",
+    category: "Epilare definitivă laser · Remodelare corporală medicală",
+    tagline: "Piele netedă definitiv. Corp remodelat medical. Rezultate garantate de peste 8 ani.",
     shortIntro:
-      "Studio privat dedicat privirii tale: extensii de gene fir cu fir sau volum, laminare de gene și sprâncene, styling și vopsit. O singură clientă pe ședință, produse premium, rezultate care arată natural.",
+      "Clinică de epilare definitivă cu laser medical și remodelare corporală, în Sighetu Marmației și Vișeu de Sus. Aparatură medicală certificată, protocoale sigure pentru orice tip de piele, rezultate garantate de peste 8 ani.",
     instagramHandle: "eternal.beauty_by_cosmina",
     instagramUrl: "https://www.instagram.com/eternal.beauty_by_cosmina/",
     phone: "+40 7xx xxx xxx", // ← completează numărul real
     whatsapp: "40700000000", // ← doar cifre, cu prefixul de țară (ex: 40722123456)
     email: "eternal.beauty.by.cosmina@gmail.com",
-    address: "Studio privat · adresa exactă se trimite la confirmarea programării",
-    city: "România",
-    mapsUrl: "https://www.instagram.com/eternal.beauty_by_cosmina/",
+    address: "Sighetu Marmației, str. Bogdan Vodă bl. C6 · Vișeu de Sus, str. Zorilor",
+    city: "Sighetu Marmației · Vișeu de Sus",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Bogdan+Vod%C4%83+bl+C6+Sighetu+Marma%C8%9Biei",
     schedule: [
       { days: "Luni – Vineri", hours: "10:00 – 19:00" },
-      { days: "Sâmbătă", hours: "10:00 – 15:00" },
+      { days: "Sâmbătă", hours: "10:00 – 14:00" },
       { days: "Duminică", hours: "Închis" },
     ],
-    bookingNote: "Programările se fac exclusiv cu confirmare prealabilă, prin mesaj pe Instagram sau WhatsApp. Răspund de obicei în mai puțin de o oră, în timpul programului.",
-    since: 2019,
+    bookingNote: "Programările se fac cu confirmare prealabilă, prin mesaj pe WhatsApp sau Instagram. Prima consultație este gratuită și include testul de piele.",
+    since: 2016,
   },
 
+  locations: [
+    {
+      id: "sighet",
+      city: "Sighetu Marmației",
+      address: "Str. Bogdan Vodă, bl. C6",
+      note: "Clinica principală · epilare laser & remodelare corporală",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Bogdan+Vod%C4%83+bl+C6+Sighetu+Marma%C8%9Biei",
+    },
+    {
+      id: "viseu",
+      city: "Vișeu de Sus",
+      address: "Str. Zorilor",
+      note: "Punct de lucru · epilare laser, pe programare",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Str+Zorilor+Vi%C8%99eu+de+Sus",
+    },
+  ],
+
   stats: [
-    { value: "1.500+", label: "seturi de gene aplicate" },
-    { value: "5 ani", label: "de experiență" },
-    { value: "1 clientă", label: "pe ședință, atenție totală" },
-    { value: "98%", label: "revin pentru întreținere" },
+    { value: "8+", label: "ani de experiență medicală" },
+    { value: "2", label: "locații în Maramureș" },
+    { value: "6–8", label: "ședințe pentru rezultat definitiv" },
+    { value: "1.900+", label: "comunitate pe Instagram" },
   ],
 
   founder: {
     name: "Cosmina",
-    role: "Lash & Brow Artist · Fondatoare Eternal Beauty",
+    role: "Fondatoare · Specialist epilare laser & remodelare corporală",
     story: [
-      "Am pornit Eternal Beauty dintr-o pasiune simplă: să văd cum o privire se transformă atunci când este pusă în valoare corect, fără exagerări.",
-      "Lucrez fiecare set ca pe o piesă unică. Aleg curbura, lungimea și densitatea în funcție de forma ochiului, de stilul tău și de cât de natural vrei să arate rezultatul. Nu există un „set standard”: există setul tău.",
-      "Igiena, produsele premium și timpul acordat fiecărei cliente nu sunt opționale. Lucrez cu o singură clientă pe ședință, în liniște, ca să te poți relaxa cu adevărat.",
-      "Mă perfecționez constant: cursuri de volum, laminare și styling de sprâncene cu traineri internaționali, pentru ca tehnica să fie mereu la zi și sigură pentru genele tale naturale.",
+      "Am deschis Eternal Beauty cu o convingere simplă: epilarea definitivă și remodelarea corporală trebuie făcute medical, cu aparatură certificată și protocoale sigure, nu „la ochi”.",
+      "Fiecare tratament începe cu o consultație și un test de piele. Stabilim fototipul, densitatea firului, zonele și numărul de ședințe, apoi urmăm planul împreună, cu rezultate măsurabile la fiecare vizită.",
+      "De peste 8 ani garantăm rezultate pentru că nu promitem minuni: explicăm ce se poate obține, în cât timp și cum menținem rezultatul.",
+      "Mă perfecționez constant în tehnologiile laser și în protocoalele de remodelare corporală, pentru ca fiecare clientă să primească ce e mai sigur și mai eficient azi.",
     ],
     credentials: [
-      "Certificare extensii gene 1D clasic",
-      "Certificare volum 2D–6D & Mega Volume",
-      "Specializare laminare gene & brow lift",
-      "Curs styling și vopsit sprâncene cu henna",
-      "Igienă și sterilizare, protocol profesional",
+      "Specializare epilare definitivă laser medical",
+      "Certificare remodelare corporală (criolipoliză, cavitație, vacuum, Wella Med)",
+      "Protocoale pentru toate fototipurile de piele",
+      "Aparatură medicală certificată CE",
+      "Peste 8 ani de practică în Maramureș",
     ],
     values: [
-      { title: "Natural înainte de toate", text: "Alegem împreună un look care îți completează trăsăturile, nu unul care le acoperă." },
-      { title: "Sănătatea genelor tale", text: "Greutatea extensiilor este calculată pentru fiecare fir natural. Fără suprasolicitare, fără căderi premature." },
-      { title: "Timp, nu grabă", text: "O ședință durează cât trebuie. Nu suprapun programări și nu lucrez contra cronometru." },
+      { title: "Medical, nu cosmetic", text: "Lucrăm cu laser medical și parametri setați după fototipul tău. Siguranța pielii e prima regulă." },
+      { title: "Rezultate garantate", text: "Plan de tratament clar, cu număr de ședințe estimat și evoluție urmărită la fiecare vizită." },
+      { title: "Fără durere inutilă", text: "Sisteme de răcire integrate și protocoale blânde. Majoritatea clientelor descriu senzația ca pe un ciupit scurt." },
     ],
   },
 
+  /* Lista reală de servicii (de pe Instagram / de la client). Prețurile sunt orientative. */
   services: [
     {
-      id: "gene-1d",
-      name: "Extensii gene 1D",
-      subtitle: "Efect natural, fir cu fir",
+      id: "epilare-laser",
+      group: "laser",
+      name: "Epilare definitivă cu aparat medical",
+      subtitle: "Laser medical, pentru toate fototipurile",
       description:
-        "Se aplică o extensie pe fiecare geană naturală, pentru o privire deschisă și definită, care arată ca a ta, doar mai bună. Ideal dacă vrei să renunți la rimel fără ca cineva să observe „că ai ceva”.",
-      duration: "~ 2h",
-      price: 200,
-      maintenance: "Întreținere la 2–3 săpt. · 120 lei",
-    },
-    {
-      id: "gene-volum",
-      name: "Extensii gene 2D–3D",
-      subtitle: "Volum moale, textură pufoasă",
-      description:
-        "Evantaie fine din 2–3 fire ultra‑ușoare, lucrate manual pe loc, pentru densitate fără greutate. Cel mai cerut set: pufos, dar în continuare natural. Perfect pentru gene naturale rare.",
-      duration: "~ 2h 30",
-      price: 250,
-      maintenance: "Întreținere la 2–3 săpt. · 140 lei",
-    },
-    {
-      id: "gene-mega",
-      name: "Mega Volume 4D–6D",
-      subtitle: "Dramatic, dar ușor",
-      description:
-        "Volum maxim cu fire de 0,03–0,05 mm, pentru ocazii speciale sau pentru cele care iubesc un look intens. Datorită firelor ultra‑fine, setul rămâne ușor și confortabil.",
-      duration: "~ 3h",
-      price: 320,
-      maintenance: "Întreținere la 2–3 săpt. · 170 lei",
-    },
-    {
-      id: "laminare-gene",
-      name: "Laminare gene + vopsit",
-      subtitle: "Curbură naturală 6–8 săptămâni",
-      description:
-        "Ridică și fixează genele naturale, le hrănește cu keratină și le intensifică culoarea. Zero întreținere zilnică: te trezești cu genele „gata”. Include tratament de nutriție cu botox pentru gene.",
-      duration: "~ 1h",
-      price: 150,
-      maintenance: "Se repetă la 6–8 săptămâni",
-    },
-    {
-      id: "laminare-sprancene",
-      name: "Laminare sprâncene",
-      subtitle: "Brow lift · formă disciplinată",
-      description:
-        "Fixează firele în direcția dorită, umple vizual golurile și dă efectul de sprâncene pieptănate, pline și ordonate. Include pensat de corecție și vopsit.",
-      duration: "~ 1h",
-      price: 150,
-      maintenance: "Se repetă la 6–8 săptămâni",
-    },
-    {
-      id: "styling-sprancene",
-      name: "Pensat & vopsit sprâncene",
-      subtitle: "Formă corectată după trăsăturile tale",
-      description:
-        "Mapare după proporțiile feței, pensat cu ață sau pensetă, vopsire cu henna sau vopsea profesională, pentru un contur curat care ține 2–4 săptămâni.",
-      duration: "~ 45 min",
+        "Epilare definitivă cu laser medical certificat: față, axile, brațe, inghinal, picioare sau full body. Răcire integrată, parametri setați după pielea ta, fără lamă, fără ceară, fără fire crescute sub piele. Cura completă: 6–8 ședințe.",
+      duration: "15 min – 2h, după zone",
+      sessions: "6–8 ședințe · la 4–8 săptămâni",
       price: 80,
-      maintenance: "Se repetă la 3–4 săptămâni",
+      unit: "zonă mică",
+      from: true,
     },
     {
-      id: "pachet-laminare",
-      name: "Pachet laminare gene + sprâncene",
-      subtitle: "Privirea completă, într-o singură ședință",
+      id: "criolipoliza",
+      group: "remodelare",
+      name: "Criolipoliză",
+      subtitle: "Grăsime localizată eliminată prin frig controlat",
       description:
-        "Cele două laminări în aceeași vizită, cu preț redus. Rezultat armonios: gene curbate și sprâncene pline, fără machiaj, timp de aproape două luni.",
-      duration: "~ 1h 45",
-      price: 270,
-      maintenance: "Se repetă la 6–8 săptămâni",
+        "Celulele adipoase sunt răcite controlat și eliminate natural de organism în 6–12 săptămâni. Pentru abdomen, flancuri, coapse, brațe, bărbie. Fără operație, fără pauză de la activitate.",
+      duration: "45–60 min / zonă",
+      sessions: "1–3 ședințe · la 6–8 săptămâni",
+      price: 350,
+      unit: "zonă",
     },
     {
-      id: "indepartare",
-      name: "Îndepărtare extensii",
-      subtitle: "Delicat, cu remover cremos",
+      id: "cavitatie",
+      group: "remodelare",
+      name: "Cavitație",
+      subtitle: "Centimetri în minus, fără bisturiu",
       description:
-        "Îndepărtare profesională a extensiilor, fără tragere și fără a afecta genele naturale, urmată de un ser de nutriție. Gratuit dacă aplici un set nou în aceeași ședință.",
-      duration: "~ 30 min",
-      price: 50,
-      maintenance: null,
+        "Ultrasunetele de joasă frecvență sparg depozitele de grăsime, care sunt eliminate apoi prin sistemul limfatic. Potrivită pentru abdomen, șolduri, coapse și brațe. Se combină ideal cu drenajul limfatic.",
+      duration: "40–45 min",
+      sessions: "8–10 ședințe · săptămânal",
+      price: 130,
+      unit: "ședință",
     },
+    {
+      id: "drenaj-limfatic",
+      group: "remodelare",
+      name: "Drenaj limfatic",
+      subtitle: "Presoterapie · retenție redusă, picioare ușoare",
+      description:
+        "Drenaj limfatic mecanic prin presoterapie: elimină retenția de apă, reduce senzația de picioare grele și accelerează eliminarea toxinelor după cavitație sau criolipoliză.",
+      duration: "30–40 min",
+      sessions: "6–10 ședințe",
+      price: 90,
+      unit: "ședință",
+    },
+    {
+      id: "tunel-infrarosu",
+      group: "remodelare",
+      name: "Tunel cu infraroșu",
+      subtitle: "Detoxifiere, ardere calorică, relaxare",
+      description:
+        "Căldura infraroșie pătrunde în profunzime, stimulează circulația și metabolismul, ajută la arderea caloriilor și la eliminarea toxinelor. O ședință de 30 de minute echivalează cu un efort fizic susținut, în deplină relaxare.",
+      duration: "30 min",
+      sessions: "8–10 ședințe · de 2–3 ori pe săptămână",
+      price: 70,
+      unit: "ședință",
+    },
+    {
+      id: "vacuum",
+      group: "remodelare",
+      name: "Vacuum",
+      subtitle: "Masaj anticelulitic și modelare",
+      description:
+        "Masajul cu vacuum mobilizează țesutul, stimulează circulația și drenajul, netezește aspectul de celulită și conturează coapsele, fesele și abdomenul. Completare eficientă pentru cavitație.",
+      duration: "30–40 min",
+      sessions: "8–10 ședințe · săptămânal",
+      price: 100,
+      unit: "ședință",
+    },
+    {
+      id: "wella-med",
+      group: "remodelare",
+      name: "Wella Med",
+      subtitle: "Remodelare corporală cu aparat medical",
+      description:
+        "Tratament de remodelare corporală cu aparat medical Wella Med, pentru fermitate, reducerea celulitei și conturarea siluetei. Se stabilește la consultație, în funcție de zonă și obiectiv, singur sau în cură combinată.",
+      duration: "40–60 min",
+      sessions: "Cură personalizată",
+      price: null,
+      unit: null,
+    },
+  ],
+
+  serviceGroups: [
+    { id: "laser", name: "Epilare definitivă laser", short: "Laser", text: "Laser medical, pentru toate fototipurile. Fără lamă, fără ceară, fără fire crescute sub piele." },
+    { id: "remodelare", name: "Remodelare corporală medicală", short: "Remodelare", text: "Criolipoliză, cavitație, drenaj limfatic, tunel cu infraroșu, vacuum, Wella Med. Rezultate măsurabile, fără operație." },
+  ],
+
+  /* Zone pentru harta corporală interactivă (prețuri orientative / ședință) */
+  zones: [
+    { id: "fata", name: "Față (buză, bărbie)", price: 80, minutes: 15, sessions: "6–8", region: "sus" },
+    { id: "axile", name: "Axile", price: 100, minutes: 15, sessions: "6–8", region: "sus" },
+    { id: "brate", name: "Brațe complet", price: 200, minutes: 30, sessions: "6–8", region: "sus" },
+    { id: "piept", name: "Piept / abdomen", price: 200, minutes: 30, sessions: "6–8", region: "mijloc" },
+    { id: "spate", name: "Spate", price: 300, minutes: 40, sessions: "6–8", region: "mijloc" },
+    { id: "inghinal", name: "Inghinal total", price: 150, minutes: 20, sessions: "6–8", region: "mijloc" },
+    { id: "coapse", name: "Coapse", price: 250, minutes: 35, sessions: "6–8", region: "jos" },
+    { id: "gambe", name: "Gambe", price: 220, minutes: 30, sessions: "6–8", region: "jos" },
   ],
 
   process: [
-    { step: "Consultație", text: "Discutăm despre stilul dorit, analizăm genele sau sprâncenele naturale și alegem împreună tehnica, curbura și lungimea potrivite." },
-    { step: "Pregătire", text: "Demachiere, curățare, izolarea genelor inferioare și mapare. Instrumentele sunt sterilizate, consumabilele de unică folosință." },
-    { step: "Aplicare", text: "Lucrez în liniște, cu răbdare, fir cu fir. Tu te relaxezi în fotoliu, cu muzică discretă. Poți chiar să adormi." },
-    { step: "Îngrijire", text: "Primești ghidul de întreținere, o periuță și recomandarea pentru următoarea ședință. Rămân disponibilă pe mesaj pentru orice întrebare." },
+    { step: "Consultație gratuită", text: "Discutăm obiectivul, evaluăm fototipul și zona, facem testul de piele. Primești planul de tratament și numărul estimat de ședințe." },
+    { step: "Pregătire", text: "Zona se rade cu 24 h înainte, fără soare, autobronzant sau ceară în ultimele 4 săptămâni. Îți trimitem lista completă pe WhatsApp." },
+    { step: "Tratament", text: "Ochelari de protecție, gel de răcire, parametri setați pe pielea ta. Senzația: un ciupit scurt, cald. Fără pauză de la activitățile zilnice." },
+    { step: "Urmărire", text: "La 4–8 săptămâni revii pentru următoarea ședință. Măsurăm evoluția și ajustăm energia pe măsură ce firul devine mai fin." },
   ],
 
   aftercare: {
-    title: "Îngrijire după ședință",
-    intro: "Câteva obiceiuri simple păstrează setul frumos până la următoarea întreținere.",
+    title: "După tratament",
+    intro: "Câteva reguli simple păstrează pielea calmă și rezultatul sigur între ședințe.",
     tips: [
-      { title: "Primele 24 de ore", text: "Evită apa, aburul, sauna și transpirația intensă. Adezivul are nevoie de timp să se fixeze complet." },
-      { title: "Curățare zilnică", text: "Spală genele cu un șampon special pentru extensii și periază-le dimineața, cu periuța primită." },
-      { title: "Fără uleiuri", text: "Produsele pe bază de ulei și demachiantele bifazice dizolvă adezivul. Alege formule oil‑free în zona ochilor." },
-      { title: "Nu trage, nu freca", text: "Dacă un fir te deranjează, scrie-mi. Tragerea extensiilor scoate și geana naturală." },
-      { title: "Dormi pe spate", text: "Perna de mătase și somnul pe spate păstrează forma evantaielor mai mult timp." },
-      { title: "Întreținere la timp", text: "La 2–3 săptămâni completăm firele căzute natural, iar setul arată mereu ca nou." },
+      { title: "Fără soare 2 săptămâni", text: "Evită expunerea directă și solarul. Folosește zilnic SPF 50 pe zonele tratate expuse." },
+      { title: "Calmează pielea", text: "Aplică gel de aloe sau crema recomandată de noi în primele 48 h. Roșeața ușoară dispare în câteva ore." },
+      { title: "Fără căldură 24–48 h", text: "Amână sauna, baia fierbinte, sportul intens și piscina, ca să nu iriți foliculii tratați." },
+      { title: "Nu smulge, nu epila cu ceară", text: "Între ședințe se folosește doar lama. Firele tratate cad singure în 1–3 săptămâni." },
+      { title: "Hidratare", text: "Bea apă suficientă, mai ales după remodelare corporală: ajută eliminarea celulelor adipoase." },
+      { title: "Respectă intervalul", text: "Ședințele la 4–8 săptămâni prind firul în faza de creștere. Intervalul corect înseamnă mai puține ședințe." },
     ],
   },
 
   policies: {
     title: "Bine de știut",
     items: [
-      { title: "Programare cu confirmare", text: "Rezervarea devine fermă după confirmarea mea pe mesaj. Îți trimit adresa și recomandările de dinainte de ședință." },
-      { title: "Anulare sau reprogramare", text: "Te rog să mă anunți cu minimum 24 de ore înainte, ca să pot oferi locul altei cliente." },
-      { title: "Întârzieri", text: "După 15 minute de întârziere, ședința poate fi scurtată sau reprogramată, ca să nu afecteze clienta următoare." },
-      { title: "Vino demachiată", text: "Fără rimel, fără eyeliner, fără creme în zona ochilor. Lentilele de contact se scot înainte de aplicare." },
-      { title: "Plată", text: "Numerar sau transfer bancar, la finalul ședinței. Pentru seturile noi se poate cere un avans de 50 lei." },
-      { title: "Vouchere cadou", text: "Orice serviciu poate fi oferit cadou. Voucherul este valabil 6 luni și se personalizează cu numele persoanei dragi." },
+      { title: "Consultație gratuită", text: "Prima vizită include evaluarea și testul de piele, fără cost. Planul și oferta se stabilesc pe loc." },
+      { title: "Contraindicații", text: "Sarcină, alăptare, tratamente fotosensibilizante, bronz recent sau afecțiuni active ale pielii amână tratamentul. Le discutăm la consultație." },
+      { title: "Anulare sau reprogramare", text: "Te rugăm să anunți cu minimum 24 h înainte, ca să oferim locul altei cliente." },
+      { title: "Pachete și abonamente", text: "Curele de 6 sau 8 ședințe au preț redus față de ședința individuală. Se plătesc integral sau în două tranșe." },
+      { title: "Plată", text: "Numerar sau card, la finalul ședinței. Pentru pachete se poate cere un avans la prima ședință." },
+      { title: "Vouchere cadou", text: "Orice tratament poate fi oferit cadou. Voucherul este valabil 6 luni, la oricare dintre cele două locații." },
     ],
   },
 
   testimonials: [
-    { name: "Andreea M.", text: "Cel mai natural set de gene pe care l-am avut vreodată. Cosmina are o răbdare de aur și un ochi pentru detalii. Nimeni nu și-a dat seama că sunt extensii, toată lumea m-a întrebat ce rimel folosesc.", service: "Extensii 2D–3D", rating: 5 },
-    { name: "Ioana P.", text: "Laminarea de sprâncene mi-a schimbat complet fața, în sensul bun. Nu mai folosesc creion deloc, dimineața câștig zece minute.", service: "Laminare sprâncene", rating: 5 },
-    { name: "Raluca D.", text: "Spațiu curat, muzică liniștită, produse bune. Am adormit la aplicare și m-am trezit cu o privire de revistă. Merg la întreținere de aproape doi ani.", service: "Mega Volume", rating: 5 },
-    { name: "Bianca T.", text: "Am venit cu gene rare și scurte, îmi era teamă că nu se poate face nimic. Cosmina a ales un set ușor, exact pe măsura mea, și a ținut perfect.", service: "Extensii 1D", rating: 5 },
-    { name: "Elena S.", text: "Laminarea de gene e cel mai bun lucru pe care l-am descoperit. Fără rimel, fără ondulator, gene curbate opt săptămâni. Recomand cu toată inima.", service: "Laminare gene", rating: 5 },
-    { name: "Diana C.", text: "Mi-a corectat forma sprâncenelor după ani de pensat greșit. Explică tot ce face și de ce. Se simte că iubește ceea ce face.", service: "Pensat & vopsit", rating: 5 },
+    { name: "Andreea M.", text: "După 6 ședințe la axile și inghinal nu am mai atins lama. Cosmina explică totul, testează pielea și setează aparatul pentru tine. Zero iritații.", service: "Epilare laser axile + inghinal", rating: 5 },
+    { name: "Ioana P.", text: "Criolipoliza pe abdomen mi-a scos ce nu reușeam cu sala. La 8 săptămâni diferența era vizibilă și în haine, nu doar pe centimetru.", service: "Criolipoliză", rating: 5 },
+    { name: "Raluca D.", text: "Picioare complet, 7 ședințe. Am venit din Vișeu, am putut face jumătate din ședințe la punctul de lucru de acolo. Rezultat definitiv.", service: "Epilare laser picioare", rating: 5 },
+    { name: "Bianca T.", text: "Îmi era teamă de durere. Răcirea aparatului face diferența, e o senzație scurtă de ciupit. Pielea închisă nu a fost o problemă.", service: "Epilare laser full body", rating: 5 },
+    { name: "Elena S.", text: "Cură de cavitație cu drenaj limfatic pe șolduri: minus 6 cm în total și picioare mult mai ușoare. Recomand seriozitatea și curățenia clinicii.", service: "Cavitație + drenaj", rating: 5 },
+    { name: "Diana C.", text: "Mustața și bărbia, problema mea de ani de zile, rezolvate în 6 ședințe scurte. Nu mai apar fire crescute sub piele.", service: "Epilare laser față", rating: 5 },
   ],
 
   faq: [
-    { q: "Cât durează extensiile de gene?", a: "Un set complet ține 3–4 săptămâni, cu întreținere recomandată la 2–3 săptămâni, în funcție de ciclul natural al genelor. La întreținere completăm firele căzute natural, iar setul arată din nou ca nou." },
-    { q: "Doare? Este periculos pentru gene?", a: "Nu. Stai cu ochii închiși, într-o poziție confortabilă, iar adezivul nu atinge pielea. Extensia se alege după grosimea și lungimea genei naturale, ca să nu o suprasolicite. Majoritatea clientelor adorm." },
-    { q: "Pot purta machiaj cu extensii?", a: "Da, dar evită produsele pe bază de ulei în zona ochilor și rimelul, mai ales cel waterproof. Fardurile și eyelinerul se pot folosi, cu demachiere blândă, oil‑free." },
-    { q: "Laminare sau extensii, ce aleg?", a: "Dacă ai gene naturale decente și vrei doar curbură și culoare, laminarea e cea mai simplă. Dacă vrei lungime și densitate vizibilă, alegem extensiile. La consultație îți arăt cum ar arăta fiecare pe tine." },
-    { q: "Cât durează o ședință?", a: "Un set nou de extensii durează între 2 și 3 ore, în funcție de volum. O laminare de gene sau sprâncene durează aproximativ o oră. Întreținerea, 60–90 de minute." },
-    { q: "Cum mă pregătesc pentru ședință?", a: "Vino demachiată, fără rimel sau creme în zona ochilor, fără lentile de contact. Evită cafeaua în exces înainte, ca să poți sta relaxată cu ochii închiși." },
-    { q: "Cum mă programez?", a: "Prin mesaj pe Instagram sau WhatsApp. Confirm data și ora, îți trimit adresa și recomandările de dinaintea ședinței. Pentru seturi noi recomand rezervarea cu 1–2 săptămâni înainte." },
-    { q: "Pot face laminare dacă am sprâncenele rare?", a: "Da, laminarea este chiar recomandată: firele fixate în direcția potrivită acoperă vizual golurile, iar vopsitul dă un plus de densitate." },
+    { q: "Este epilarea laser definitivă?", a: "Da. Laserul distruge foliculul aflat în faza de creștere, iar după cura completă de 6–8 ședințe firele nu mai cresc. Ocazional, o ședință de întreținere pe an păstrează rezultatul perfect." },
+    { q: "Doare?", a: "Senzația e descrisă ca un ciupit scurt și cald. Aparatul are răcire integrată, iar parametrii se setează după pielea ta. Zonele sensibile se tratează cu energie mai blândă." },
+    { q: "Câte ședințe sunt necesare și la ce interval?", a: "În medie 6–8 ședințe, la 4 săptămâni pentru față și axile, la 6–8 săptămâni pentru picioare și corp. Firul devine mai rar și mai fin după fiecare ședință." },
+    { q: "Se poate face pe piele închisă sau bronzată?", a: "Laserul medical pe care îl folosim tratează în siguranță toate fototipurile. Bronzul recent, însă, amână tratamentul cu 3–4 săptămâni, pentru siguranța pielii." },
+    { q: "Cum mă pregătesc?", a: "Rade zona cu 24 h înainte, nu folosi ceară sau pensetă cu 4 săptămâni înainte, evită soarele și autobronzantul, vino cu pielea curată, fără creme sau deodorant." },
+    { q: "Ce este criolipoliza și pentru cine este?", a: "O procedură non‑invazivă care răcește controlat grăsimea localizată, eliminată apoi natural în 6–12 săptămâni. Pentru persoane aproape de greutatea ideală, cu depozite locale rezistente la sport." },
+    { q: "Câte ședințe de remodelare corporală sunt necesare?", a: "Criolipoliza: 1–3 ședințe pe zonă. Cavitație, vacuum, tunel cu infraroșu: cure de 8–10 ședințe, de 1–3 ori pe săptămână. Planul exact se stabilește la consultație, după măsurători." },
+    { q: "Pot face tratamentele la oricare dintre locații?", a: "Da. Programează-te la Sighetu Marmației sau la Vișeu de Sus, în funcție de ce îți este mai aproape. Planul tău de tratament se continuă la oricare dintre ele." },
   ],
 
-  /* Fotografii: pune fișierele reale în shared/photos/ cu exact aceste nume.
-     Setul actual este generat (ilustrații editoriale). Dacă un fișier lipsește,
-     site-urile afișează automat un placeholder în paleta design-ului. */
+  /* Fotografii: pune fișierele reale în shared/photos/ cu exact aceste nume. */
   photos: [
-    { src: "post-01.jpg", alt: "Set extensii gene volum 2D, prim-plan pe ochi închis", tag: "Volum 2D" },
-    { src: "post-02.jpg", alt: "Laminare gene, rezultat după: gene curbate, ochi deschis", tag: "Laminare" },
-    { src: "post-03.jpg", alt: "Sprâncene laminate și vopsite, formă disciplinată", tag: "Brow lift" },
-    { src: "post-04.jpg", alt: "Gene naturale înainte de laminare", tag: "Înainte" },
-    { src: "post-05.jpg", alt: "Mega volume, privire dramatică pe fundal prună", tag: "Mega Volume" },
-    { src: "post-06.jpg", alt: "Detaliu mapare gene cu linii de ghidaj și pensetă", tag: "Proces" },
-    { src: "post-07.jpg", alt: "Interior studio Eternal Beauty: oglindă, consolă, plantă, fotoliu", tag: "Studio" },
-    { src: "post-08.jpg", alt: "Cosmina la lucru, aplicând extensii cu două pensete", tag: "Cosmina" },
-    { src: "post-09.jpg", alt: "Evantaie de gene 1D până la 5D, macro", tag: "Evantaie" },
-    { src: "post-10.jpg", alt: "Sprânceană pensată și vopsită cu henna", tag: "Henna" },
-    { src: "post-11.jpg", alt: "Produse premium pentru gene și sprâncene", tag: "Produse" },
-    { src: "post-12.jpg", alt: "Extensii gene efect natural 1D, ochi deschis", tag: "Natural 1D" },
+    { src: "post-01.jpg", alt: "Epilare laser axile, piesă de mână pe piele", tag: "Laser axile" },
+    { src: "post-02.jpg", alt: "Picioare netede după cura de epilare laser", tag: "După" },
+    { src: "post-03.jpg", alt: "Criolipoliză, aplicator pe abdomen", tag: "Criolipoliză" },
+    { src: "post-04.jpg", alt: "Picioare înainte de epilarea laser", tag: "Înainte" },
+    { src: "post-05.jpg", alt: "Zone de tratament full body", tag: "Full body" },
+    { src: "post-06.jpg", alt: "Aparat laser medical", tag: "Aparatură" },
+    { src: "post-07.jpg", alt: "Interior clinică Eternal Beauty", tag: "Clinica" },
+    { src: "post-08.jpg", alt: "Cosmina în timpul unui tratament laser", tag: "Cosmina" },
+    { src: "post-09.jpg", alt: "Cavitație pe coapsă, aplicator cu ultrasunete", tag: "Cavitație" },
+    { src: "post-10.jpg", alt: "Drenaj limfatic, presoterapie pe picioare", tag: "Drenaj" },
+    { src: "post-11.jpg", alt: "Tunel cu infraroșu, lumină caldă", tag: "Infraroșu" },
+    { src: "post-12.jpg", alt: "Epilare laser buză superioară", tag: "Laser față" },
     { src: "portrait.jpg", alt: "Portret Cosmina, fondatoare Eternal Beauty", tag: "Portret" },
-    { src: "hero.jpg", alt: "Privire cu extensii de gene, fotografie de copertă", tag: "Cover" },
+    { src: "hero.jpg", alt: "Epilare definitivă laser, fotografie de copertă", tag: "Cover" },
   ],
 };
 
 /* Utilitare comune celor 3 design-uri */
 window.ETERNAL.util = {
-  photoPath(file) {
-    return "../../shared/photos/" + file;
-  },
+  photoPath(file) { return "../../shared/photos/" + file; },
   waLink(text) {
     const b = window.ETERNAL.brand;
-    return "https://wa.me/" + b.whatsapp + "?text=" + encodeURIComponent(text || "Bună, Cosmina! Aș dori o programare la Eternal Beauty. Când ai un loc liber?");
+    return "https://wa.me/" + b.whatsapp + "?text=" + encodeURIComponent(text || "Bună! Aș dori o consultație gratuită la Eternal Beauty pentru epilare laser / remodelare corporală. Când aveți un loc liber?");
   },
-  priceLabel(p) {
-    return p == null ? "la cerere" : p + " lei";
-  },
-  /* placeholder SVG generat cu paleta design-ului, folosit când lipsește poza */
+  priceLabel(p, unit, from) { return p == null ? "la cerere" : (from ? "de la " : "") + p + " lei" + (unit ? " / " + unit : ""); },
   placeholder(label, a, b, fg) {
     const svg =
       `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1000'>` +
       `<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='${a}'/><stop offset='1' stop-color='${b}'/></linearGradient></defs>` +
       `<rect width='800' height='1000' fill='url(#g)'/>` +
-      `<ellipse cx='400' cy='520' rx='230' ry='120' fill='none' stroke='${fg}' stroke-opacity='.35' stroke-width='3'/>` +
-      `<ellipse cx='400' cy='520' rx='90' ry='90' fill='${fg}' fill-opacity='.18'/>` +
-      `<text x='400' y='880' font-family='Georgia, serif' font-size='30' fill='${fg}' fill-opacity='.7' text-anchor='middle'>${label.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</text>` +
+      `<circle cx='400' cy='500' r='160' fill='none' stroke='${fg}' stroke-opacity='.35' stroke-width='3'/>` +
+      `<circle cx='400' cy='500' r='70' fill='${fg}' fill-opacity='.18'/>` +
+      `<text x='400' y='880' font-family='sans-serif' font-size='30' fill='${fg}' fill-opacity='.7' text-anchor='middle'>${label.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</text>` +
       `</svg>`;
     return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
   },
   bindPlaceholders(a, b, fg) {
-    const swap = (img) => {
-      if (img.dataset.fallback) return;
-      img.dataset.fallback = "1";
-      img.src = window.ETERNAL.util.placeholder(img.dataset.photo || img.alt, a, b, fg);
-    };
-    document.querySelectorAll("img[data-photo]").forEach((img) => {
-      img.addEventListener("error", () => swap(img));
-      if (img.complete && img.naturalWidth === 0) swap(img);
-    });
+    const swap = (img) => { if (img.dataset.fallback) return; img.dataset.fallback = "1"; img.src = window.ETERNAL.util.placeholder(img.dataset.photo || img.alt, a, b, fg); };
+    document.querySelectorAll("img[data-photo]").forEach((img) => { img.addEventListener("error", () => swap(img)); if (img.complete && img.naturalWidth === 0) swap(img); });
   },
 };

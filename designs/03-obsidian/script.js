@@ -14,6 +14,8 @@
   $$("[data-ig]").forEach((a) => (a.href = B.instagramUrl));
   $$("[data-mail]").forEach((a) => (a.href = "mailto:" + B.email));
   $("#year").textContent = new Date().getFullYear();
+  $$("[data-tel]").forEach((a) => (a.href = "tel:" + B.phone.replace(/\s+/g, "")));
+  $("#locations").innerHTML = D.locations.map((l) => `<div><h3>${esc(l.city)}</h3><p>${esc(l.address)} · ${esc(l.note)}</p><a href="${esc(l.mapsUrl)}" target="_blank" rel="noopener">Deschide în Maps ↗</a></div>`).join("");
   $("#schedule").innerHTML = B.schedule.map((s) => `<span class="sched"><span>${esc(s.days)}</span><span>${esc(s.hours)}</span></span>`).join("");
   $$(".hero__word span").forEach((s, i) => s.style.setProperty("--i", i));
   $$(".menu a").forEach((a, i) => a.style.setProperty("--i", i));
@@ -41,9 +43,9 @@
         <p class="card__sub">${esc(s.subtitle)}</p>
         <p class="card__desc">${esc(s.description)}</p>
         <div class="card__meta">
-          <div><b>${esc(U.priceLabel(s.price))}</b><span>preț</span></div>
-          <div><b>${esc(s.duration.replace("~ ", ""))}</b><span>durată</span></div>
-          ${s.maintenance ? `<div><b>${esc(s.maintenance.split("·").pop().trim())}</b><span>${esc(s.maintenance.split("·")[0].trim())}</span></div>` : ""}
+          <div><b>${esc(U.priceLabel(s.price, s.unit, s.from))}</b><span>preț</span></div>
+          <div><b>${esc(s.duration)}</b><span>durată</span></div>
+          ${s.sessions ? `<div><b>${esc(s.sessions.split("·")[0].trim())}</b><span>${esc((s.sessions.split("·")[1] || "cură").trim())}</span></div>` : ""}
         </div>
       </div>
       <figure class="card__img"><img data-photo="${esc(photoFor(i).tag)}" src="${U.photoPath(photoFor(i).src)}" alt="${esc(photoFor(i).alt)}" width="800" height="1000" loading="lazy"></figure>
