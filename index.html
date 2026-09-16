@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brixwave × Eternal Beauty — alege designul</title>
+<meta name="description" content="Portal Brixwave: trei propuneri de design pentru site-ul Eternal Beauty by Cosmina. Alege varianta preferată și primești oferta.">
+<meta name="theme-color" content="#0b0d12">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/brixwave.css">
+</head>
+<body>
+<a class="skip" href="#designs">Sari la design-uri</a>
+
+<header class="hdr">
+  <a class="logo" href="#" aria-label="Brixwave">
+    <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 22c4-10 8-10 12 0s8 10 12 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M4 12c4-10 8-10 12 0s8 10 12 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".45"/></svg>
+    <span>Brixwave</span>
+  </a>
+  <span class="hdr__for">Propunere pentru <b>Eternal Beauty by Cosmina</b></span>
+  <a class="hdr__price" href="#oferta">1.250 RON <small>orice design</small></a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <p class="hero__hello reveal">Bună, Cosmina</p>
+    <h1 class="hero__title">
+      <span class="lm"><span>Trei direcții de design</span></span>
+      <span class="lm"><span>pentru <em>Eternal Beauty.</em></span></span>
+    </h1>
+    <p class="hero__lead reveal">Am pregătit trei site-uri complete, fiecare cu altă personalitate: unul întunecat și luxos, unul editorial și cald, unul minimal și calm. Explorează-le, apoi alege-l pe cel care te reprezintă. Prețul este același pentru oricare dintre ele.</p>
+    <div class="hero__cta reveal">
+      <a class="btn btn--primary" href="#designs">Vezi design-urile</a>
+      <a class="btn" href="#oferta">Ce include oferta</a>
+    </div>
+    <ul class="hero__facts reveal">
+      <li><b>3</b> variante complete</li>
+      <li><b>1.250 RON</b> preț unic</li>
+      <li><b>100%</b> responsive, animat</li>
+    </ul>
+  </section>
+
+  <section class="designs" id="designs">
+    <div class="sec-head">
+      <h2>Alege designul</h2>
+      <p>Fiecare card are un preview live. Deschide-l pe ecran mare sau în format telefon, apoi apasă <b>Aleg acest design</b>. Vei vedea imediat prețul și pasul următor.</p>
+    </div>
+    <div class="cards" id="cards"></div>
+    <p class="designs__note">Fotografiile și textele sunt provizorii. Le înlocuim cu pozele și informațiile reale de pe <a href="https://www.instagram.com/eternal.beauty_by_cosmina/" target="_blank" rel="noopener">@eternal.beauty_by_cosmina</a> după alegerea designului.</p>
+  </section>
+
+  <section class="compare" id="comparatie">
+    <div class="sec-head">
+      <h2>Pe scurt, în paralel</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="tbl" id="compare-table"></table>
+    </div>
+  </section>
+
+  <section class="offer" id="oferta">
+    <div class="offer__card">
+      <div class="offer__price">
+        <span class="offer__label">Preț unic, indiferent de design</span>
+        <span class="offer__amount">1.250 <small>RON</small></span>
+        <span class="offer__hint" id="offer-hint">Alege un design mai sus pentru a confirma.</span>
+      </div>
+      <div class="offer__body">
+        <h2>Ce include</h2>
+        <ul class="offer__list" id="includes"></ul>
+        <h3>Cum continuăm</h3>
+        <ol class="offer__steps" id="steps"></ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <span>© <span id="year"></span> Brixwave. Portal de prezentare pentru Eternal Beauty by Cosmina.</span>
+  <a id="footer-mail" href="#"></a>
+</footer>
+
+<!-- Preview overlay -->
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewer-title">
+  <div class="viewer__bar">
+    <div class="viewer__title" id="viewer-title"></div>
+    <div class="viewer__devices" role="group" aria-label="Dispozitiv">
+      <button class="seg is-on" data-device="desktop">Desktop</button>
+      <button class="seg" data-device="mobile">Telefon</button>
+    </div>
+    <div class="viewer__actions">
+      <a class="btn btn--sm" id="viewer-open" href="#" target="_blank" rel="noopener">Deschide în tab nou</a>
+      <button class="btn btn--sm btn--primary" id="viewer-choose">Aleg acest design</button>
+      <button class="iconbtn" id="viewer-close" aria-label="Închide previzualizarea">×</button>
+    </div>
+  </div>
+  <div class="viewer__stage" id="viewer-stage"><iframe id="viewer-frame" title="Previzualizare design"></iframe></div>
+</div>
+
+<!-- Choice modal -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal__card">
+    <button class="iconbtn modal__close" id="modal-close" aria-label="Închide">×</button>
+    <p class="modal__kicker-free">Ai ales</p>
+    <h2 id="modal-title" class="modal__title"></h2>
+    <p class="modal__desc" id="modal-desc"></p>
+    <div class="modal__price">
+      <span>Preț</span>
+      <b>1.250 RON</b>
+      <span>același pentru oricare dintre cele trei design-uri</span>
+    </div>
+    <ul class="modal__list" id="modal-includes"></ul>
+    <div class="modal__actions">
+      <a class="btn btn--primary" id="modal-mail" href="#">Confirmă alegerea pe e‑mail</a>
+      <a class="btn" id="modal-wa" href="#" target="_blank" rel="noopener">Confirmă pe WhatsApp</a>
+    </div>
+    <p class="modal__foot">Mesajul se completează automat cu designul ales. Poți schimba oricând alegerea, înainte de confirmare.</p>
+  </div>
+</div>
+
+<script src="assets/brixwave.js"></script>
+</body>
+</html>

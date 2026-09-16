@@ -1,0 +1,50 @@
+# Portal Brixwave × Eternal Beauty by Cosmina
+
+Portal de prezentare prin care clienta (Eternal Beauty by Cosmina) alege unul dintre
+**trei design-uri complete** de site. Prețul este **1.250 RON pentru oricare** dintre ele
+și îi este comunicat imediat după alegere, împreună cu pașii următori.
+
+```
+index.html                     ← portalul Brixwave (alegere design + preț + confirmare)
+assets/brixwave.{css,js}       ← stil + logică portal (config în capul lui brixwave.js)
+designs/01-noir-luxe/          ← Design 1: întunecat, auriu, cinematic
+designs/02-blush-editorial/    ← Design 2: editorial, roz prăfuit & prună
+designs/03-atelier-minimal/    ← Design 3: minimal, salvie & ivoriu
+shared/eternal-data.js         ← TOATE datele salonului (o singură sursă pentru cele 3 site-uri)
+shared/photos/                 ← fotografiile (vezi README-ul de acolo)
+scripts/import-instagram.sh    ← import automat al postărilor publice (Instaloader)
+.claude/skills/                ← skill-uri de design instalate (vezi mai jos)
+```
+
+## Rulare locală
+
+Site-urile sunt statice, fără build. Deschide `index.html` direct sau, mai bine:
+
+```bash
+python3 -m http.server 8080
+# http://localhost:8080/
+```
+
+Funcționează și pe GitHub Pages / Netlify / orice hosting static (rădăcina repo-ului).
+
+## Ce trebuie completat înainte de a trimite portalul clientei
+
+1. **Datele salonului** în `shared/eternal-data.js`: telefon, WhatsApp, adresă, program,
+   servicii și prețuri, testimoniale reale. Câmpurile provizorii sunt marcate `[PLACEHOLDER]`.
+2. **Fotografiile** în `shared/photos/` (nume exacte în `shared/photos/README.md`).
+   Instagram nu a fost accesibil din mediul de generare, deci pornim cu placeholdere
+   generate în paleta fiecărui design.
+3. **Contact Brixwave** în `assets/brixwave.js` → `BRIXWAVE.email` / `BRIXWAVE.whatsapp`.
+   Confirmarea alegerii ajunge acolo, cu designul ales în mesaj.
+
+## Skill-uri instalate (`.claude/skills/`)
+
+| Sursă | Skill-uri |
+| --- | --- |
+| Emil Kowalski (`emilkowalski/skills`) | `emil-design-eng`, `animate`, `review-animations`, `improve-animations`, `find-animation-opportunities`, `animation-vocabulary`, `prototype`, `apple-design`, `pick-ui-library` |
+| Taste Skill (`Leonxlnx/taste-skill`) | `taste-skill` (design-taste-frontend v2), `soft-skill`, `redesign-skill`, `minimalist-skill`, `output-skill`, `gpt-tasteskill` |
+| Impeccable (`pbakaus/impeccable`) | `impeccable` + 36 referințe (`/impeccable polish`, `audit`, `critique`, `animate`, `bolder`, `quieter` …) |
+
+Impeccable a fost compilat direct din sursă (bundle-ul semnat de pe GitHub Releases nu era
+accesibil). Launcher-ul `scripts/impeccable` descarcă motorul la prima rulare pe un calculator
+cu acces la GitHub.

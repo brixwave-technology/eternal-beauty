@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+# fișiere de lucru Impeccable
+.impeccable/*
+!.impeccable/config.json
+.impeccable/config.local.json

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eternal Beauty by Cosmina — Blush Editorial</title>
+<meta name="description" content="Eternal Beauty by Cosmina: extensii de gene, laminare gene și sprâncene, styling de sprâncene. Programează-te.">
+<meta name="theme-color" content="#fbf4f0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+<header class="top">
+  <a class="top__brand" href="#" aria-label="Eternal Beauty, acasă">Eternal Beauty <small>by Cosmina</small></a>
+  <nav class="top__nav" aria-label="Meniu principal">
+    <a href="#servicii">Servicii</a><a href="#galerie">Galerie</a><a href="#despre">Despre</a><a href="#pareri">Păreri</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="pill pill--dark" data-wa href="#" target="_blank" rel="noopener">Programare</a>
+</header>
+
+<main>
+  <!-- HERO: editorial cover -->
+  <section class="cover">
+    <div class="cover__issue" aria-hidden="true"><span>Eternal Beauty</span><span id="cover-date"></span><span>Gene · Sprâncene</span></div>
+    <h1 class="cover__title">
+      <span class="w" style="--d:0">Frumusețea</span>
+      <span class="w w--italic" style="--d:1">care</span>
+      <span class="w" style="--d:2">rămâne.</span>
+    </h1>
+    <figure class="cover__photo">
+      <img data-photo="Cover" src="../../shared/photos/hero.jpg" alt="Privire cu extensii de gene, fotografie de copertă" width="800" height="1000" fetchpriority="high">
+      <div class="cover__sticker" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/></defs><text><textPath href="#circ">programează-te · programează-te · programează-te · </textPath></text></svg>
+        <span>↓</span>
+      </div>
+    </figure>
+    <aside class="cover__aside">
+      <p class="cover__lead" data-brand="shortIntro"></p>
+      <div class="cover__cta">
+        <a class="pill pill--dark pill--lg" data-wa href="#" target="_blank" rel="noopener">Rezervă pe WhatsApp</a>
+        <a class="pill" href="#servicii">Serviciile</a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true"><div class="ticker__track" id="ticker"></div></div>
+
+  <!-- SERVICII: large numbered-free list with sticky heading -->
+  <section class="menu" id="servicii">
+    <div class="menu__side">
+      <h2 class="display">Servicii</h2>
+      <p class="muted">Apasă pe un serviciu pentru detalii. Prețul final se stabilește la consultație, după analiza genelor naturale.</p>
+    </div>
+    <ul class="menu__list" id="services"></ul>
+  </section>
+
+  <!-- GALERIE: editorial grid -->
+  <section class="grid" id="galerie">
+    <div class="grid__head">
+      <h2 class="display">Din <em>studio</em></h2>
+      <a class="pill" data-ig href="#" target="_blank" rel="noopener">Vezi tot pe Instagram ↗</a>
+    </div>
+    <div class="grid__wall" id="gallery"></div>
+  </section>
+
+  <!-- DESPRE: split with pull-quote -->
+  <section class="about" id="despre">
+    <div class="about__text">
+      <h2 class="display">Cosmina</h2>
+      <p class="about__role" data-founder="role"></p>
+      <div id="story"></div>
+      <ul class="about__creds" id="creds"></ul>
+    </div>
+    <figure class="about__photo">
+      <img data-photo="Portret" src="../../shared/photos/portrait.jpg" alt="Portret Cosmina, fondatoare Eternal Beauty" width="800" height="1000" loading="lazy">
+    </figure>
+  </section>
+
+  <!-- PROCES: horizontal stepper cards -->
+  <section class="steps">
+    <h2 class="display steps__title">Ședința, <em>pas cu pas</em></h2>
+    <ol class="steps__row" id="process"></ol>
+  </section>
+
+  <!-- PĂRERI: cards fanned -->
+  <section class="voices" id="pareri">
+    <h2 class="display">Ce spun <em>clientele</em></h2>
+    <div class="voices__deck" id="quotes"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2 class="display">Întrebări</h2>
+    <div class="faq__list" id="faq"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__card">
+      <h2 class="contact__title">Te aștept <em>în studio.</em></h2>
+      <p class="muted" data-brand="bookingNote"></p>
+      <div class="contact__grid">
+        <div>
+          <h3>Programări</h3>
+          <a class="pill pill--dark" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="pill" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div>
+          <h3>Program</h3>
+          <div id="schedule"></div>
+        </div>
+        <div>
+          <h3>Unde</h3>
+          <p><a data-maps href="#" target="_blank" rel="noopener" data-brand="address"></a></p>
+          <p><a data-tel href="#" data-brand="phone"></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> Eternal Beauty by Cosmina</span>
+  <a data-ig href="#" target="_blank" rel="noopener">@<span data-brand="instagramHandle"></span></a>
+  <span>Site realizat de <a href="https://github.com/brixwave-technology" target="_blank" rel="noopener">Brixwave</a></span>
+</footer>
+
+<script src="../../shared/eternal-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
