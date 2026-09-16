@@ -94,8 +94,10 @@
   /* scroll engine (passive + rAF, transforms only) */
   const par = $$("[data-parallax]"), flow = $(".flow__row"), flowBar = $("#flow-progress"), quoteBig = $("#quote-big");
   let raf = 0;
+  const topBar = $(".top");
   const frame = () => {
     raf = 0; const vh = innerHeight;
+    topBar.classList.toggle("is-scrolled", scrollY > 40);
     // sticky stack: shrink the previous card as the next arrives
     if (!reduce) wraps.forEach((w, i) => {
       if (i === 0) return; const r = w.getBoundingClientRect(); const p = Math.min(1, Math.max(0, 1 - r.top / vh));
