@@ -27,6 +27,13 @@ python3 -m http.server 8080
 
 Funcționează și pe GitHub Pages / Netlify / orice hosting static (rădăcina repo-ului).
 
+## GitHub Pages
+
+Repo-ul conține `.github/workflows/pages.yml`, care publică rădăcina repo-ului la fiecare push.
+Activare (o singură dată): **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+Adresa portalului va fi `https://brixwave-technology.github.io/eternal-beauty/`.
+Alternativ, „Deploy from a branch” cu ramura curentă și folderul `/ (root)` funcționează la fel.
+
 ## Ce trebuie completat înainte de a trimite portalul clientei
 
 1. **Datele salonului** în `shared/eternal-data.js`: telefon, WhatsApp, adresă, program,
